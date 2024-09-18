@@ -7,26 +7,55 @@ body{
     display: flex;
     padding: 20px;
     margin: 10px 20px;
+    align-items: center;
+    justify-content: space-around;
 }
 .logo>a>img{
     width: 150px;
     height: 100px;
 }
-.logo>form{
-    display: flex;
-    margin-left: 25px;
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
 }
-.logo>form>input{
-    width: 250px;
-    height: 40px;
-    font-size: large;
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    background: url("/Users/PC/Pictures/Screenshots/Ảnh chụp màn hình 2024-07-30 103502.png");
+    background-size: cover;
 }
-.logo>form>.button1{
-    width: 120px;
-    height: 40px;
-    margin-left: 20px;
-    font-size: 15px;
+.modal-content>input{
+    width: 200px;
+    height: 50px;
 }
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*======================nav========================*/
 nav{
     margin: 0px 10px;
 
@@ -37,6 +66,7 @@ a{
 }
 nav>.menu{
     display: flex;
+    font-size: larger;
 }
 nav>.menu>li{
     margin: 5px 20px;
@@ -68,7 +98,7 @@ nav>.menu>li>.dropdown>li:hover{
     background-color: rgb(8, 133, 8);
 }
 .log-in{
-    width: 100px;
+    width: 80px;
     border: 1px solid black;
     margin-right: 5px;
     height: 30px;
@@ -80,7 +110,7 @@ nav>.menu>li>.dropdown>li:hover{
     text-decoration: none;
 }
 .sign-up{
-    width: 100px;
+    width: 80px;
     background-color: black;
     border: 1px solid black;
     height: 30px;
@@ -121,13 +151,14 @@ nav>.menu>li>.dropdown>li:hover{
     color: black;
 }
 .dropdown-menu>.menu2>li>.brand1{
+    border-radius: 3%;
     background-color: #fff;
     position: absolute;
     list-style: none;
     width: 250px;
     margin-top: 10px;
     display: none;
-    height: 170px;
+    height: 250px;
     z-index: 3;
 }
 .dropdown-menu>.menu2>li:hover>.brand1{
@@ -149,12 +180,13 @@ nav>.menu>li>.dropdown>li:hover{
     text-decoration: none;
 }
 .dropdown-menu>.menu2>li>.brand1>li>.brand2{
+    border-radius: 3%;
     background-color: #fff;
     list-style: none;
     width: 250px;
     margin-top: 10px;
     display: none;
-    height: 170px;
+    height: 250px;
 }
 .dropdown-menu>.menu2>li>.brand1>li:hover>.brand2{
     display: block;
@@ -169,6 +201,7 @@ nav>.menu>li>.dropdown>li:hover{
 .dropdown-menu>.menu2>li>.brand1>li>.brand2>li:hover{
     background-color: rgb(8, 133, 8);
 }
+
 /*========================slide-images===================*/
 .carousel-container {
     width: 100%;
@@ -224,8 +257,7 @@ nav>.menu>li>.dropdown>li:hover{
     right: 10px;
 }
 .categories{
-    border: 1px solid black;
-    background-color: aqua;
+    background-color: #fff;
     display: flex;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -235,7 +267,7 @@ nav>.menu>li>.dropdown>li:hover{
 }
 .categories>div{
     margin: 5px 10px;
-    background-color: aquamarine;
+    background-color:  rgb(192, 190, 190);
     border: 1px solid #fff;
     border-radius: 10px;
     height: 40px;
@@ -246,8 +278,9 @@ nav>.menu>li>.dropdown>li:hover{
 }
 .categories>div>a{
     justify-content: center;
-    color: black;
+    color: rgb(83, 83, 83);
     text-decoration: none;
+    align-items: center;
 }
 .recently-viewed{
     margin: 15px 0px;
@@ -387,7 +420,8 @@ nav>.menu>li>.dropdown>li:hover{
     margin-bottom: 20px;
     padding: 10px 10px;
     height: 450px;
-    background-color: gray;
+    background-color: #fff;
+    align-items: center;
 }
 .famous-brands>.line1-1{
     display: flex;
@@ -399,7 +433,10 @@ nav>.menu>li>.dropdown>li:hover{
     height: 180px;
     margin: 20px 15px;
 }
-.famous-brands>.line1-1>.item>img{
+.famous-brands>.line1-1>.item>a{
+    text-decoration: none;
+}
+.famous-brands>.line1-1>.item>a>img{
     width: 220px;
     height: 140px;
 }
@@ -413,34 +450,172 @@ nav>.menu>li>.dropdown>li:hover{
     height: 180px;
     margin: 20px 15px;
 }
-.famous-brands>.line1-2>.item>img{
+.famous-brands>.line1-2>.item>a{
+    text-decoration: none;
+}
+.famous-brands>.line1-2>.item>a>img{
     width: 220px;
     height: 140px;
 }
 
 /*=============picture================*/
 .picture>img{
-    width: 100%;
+    width: 102%;
     height: 450px;
+    margin-bottom: 35px;
 }
-/*=============footer=================*/
+/*=============Adidas-shoes===========*/
+.adidas-product{
+    margin-top: 20px;
+    display: flex;
+    height: 600px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
 
+}
+.adidas-product>a{
+    margin: 10px 20px;
+}
+.adidas-product>a>img{
+    height: 570px;
+    width: 350px;
+    transition: filter 0.5s ease;
+    border-radius: 5px;
+}
+.adidas-product>a>img:hover{
+    filter: grayscale(100%);
+}
+
+.adidas-product>.adidas-details-line1{
+    margin-bottom: 30px;
+}
+.adidas-product>.adidas-details-line1>a{
+    margin: 10px 10px;
+    text-decoration: none;
+    width: 280px;
+    height: 210px;
+}
+.adidas-product>.adidas-details-line1>a>h3{
+    width: 240px;
+}
+.adidas-product>.adidas-details-line1>a>img{
+    width: 300px;
+    height: 190px;
+    transition: transform 0.5s ease;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.adidas-product>.adidas-details-line1>a>img:hover{
+    transform: scale(1.1);
+}
+
+.adidas-product>.adidas-details-line2{
+    margin-bottom: 20px;
+}
+.adidas-product>.adidas-details-line2>a{
+    margin: 10px 10px;
+    text-decoration: none;
+    width: 280px;
+    height: 210px;
+}
+.adidas-product>.adidas-details-line2>a>h3{
+    width: 240px;
+}
+.adidas-product>.adidas-details-line2>a>img{
+    width: 300px;
+    height: 190px;
+    transition: transform 0.5s ease;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.adidas-product>.adidas-details-line2>a>img:hover{
+    transform: scale(1.1);
+}
+
+.adidas-product>.adidas-details-line3{
+    margin-bottom: 20px;
+}
+.adidas-product>.adidas-details-line3>a{
+    margin: 10px 10px;
+    text-decoration: none;
+    width: 280px;
+    height: 210px;
+}
+.adidas-product>.adidas-details-line3>a>h3{
+    width: 240px;
+}
+.adidas-product>.adidas-details-line3>a>img{
+    width: 300px;
+    height: 190px;
+    transition: transform 0.5s ease;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.adidas-product>.adidas-details-line3>a>img:hover{
+    transform: scale(1.1);
+}
+
+/*=============News===================*/
+.news{
+    margin-bottom: 20px;
+    display: flex;
+}
+.news>a{
+    width: 400px;
+    height: 290px;
+    text-decoration: none;
+    margin: 10px 15px;
+}
+.news>a>img{
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+/*=============Back-to-top============*/
+#back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #7b7979;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none; /* Ẩn nút mặc định */
+    transition: all 0.3s ease;
+  }
+
+  /* Thay đổi kiểu nút khi di chuột */
+  #back-to-top:hover {
+    background-color: #555;
+  }
+/*=============footer=================*/
 .ft{
     display: flex;
-    width: 100%;
+    width: 1350px;
     height: 325px;
     border-top: 1px solid black;
     margin-top: 20px;
+    padding-top: 15px;
 }
 .ft>.content{
     margin-left: 40px;
     width: 350px;
     margin-bottom: 15px;
 }
+.ft>.content>a>img{
+    width: 110px;
+    height: 95px;
+}
 .ft>.content>legend{
     border-bottom: 1px solid grey;
     width: 120px;
     margin-bottom: 12px;
+    font-weight: bold;
 }
 .ft>.content>.sile1>a>img{
     width: 40px;
@@ -453,6 +628,7 @@ nav>.menu>li>.dropdown>li:hover{
     border-bottom: 1px solid grey;
     width: 120px;
     margin-bottom: 12px;
+    font-weight: bold;
 }
 .ft>.content>p{
     font-family: Arial, Helvetica, sans-serif;

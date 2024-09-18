@@ -15,10 +15,47 @@
             <a href="Home.html">
                 <img src="C:\Users\PC\Pictures\Screenshots\Ảnh chụp màn hình 2024-07-30 103502.png" alt="image"/>  
             </a>
-            <form>
-                <input type="text" placeholder="Hôm nay có gì?"/>
-                <button class="button1">Tìm kiếm</button>
-            </form>
+           
+            <img src="https://www.freeiconspng.com/uploads/search-icon-png-21.png" alt="Tìm kiếm" id="openModal" style="cursor: pointer; width: 35px; height: 35px; margin-left: 10px;" />
+            <div id="searchModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm..." />
+                    <br><br>
+                    <button onclick="submitSearch()"><img src="https://www.freeiconspng.com/uploads/search-icon-png-21.png" alt="Tìm kiếm" id="openModal" style="cursor: pointer; width: 25px; height: 25px; margin-left: 10px;" /></button>
+                </div>
+            </div>
+            <script>
+                var modal = document.getElementById("searchModal");
+                var btn = document.getElementById("openModal");
+                var span = document.getElementsByClassName("close")[0];
+
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+            modal.style.display = "none";
+             }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function submitSearch() {
+            var keyword = document.getElementById("searchInput").value;
+            if (keyword) {
+                alert("Bạn đã tìm kiếm: " + keyword);
+                modal.style.display = "none";
+            } else {
+                alert("Vui lòng nhập từ khóa tìm kiếm.");
+            }
+        }
+            </script>
+
             <nav>
             <ul class="menu">
                 <li><a href="#">Tin Tức</a></li>
@@ -130,6 +167,7 @@
                 <div class="carousel-item2"><img src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/05/AJ4MilitaryBlue_Primary_Desktop-2048x623.webp" alt="Image 2"></div>
                 <div class="carousel-item2"><img src="https://bizweb.dktcdn.net/100/500/384/themes/928070/assets/collection_banner.jpg?1714744908576" alt="Image 3"></div>
                 <div class="carousel-item2"><img src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/03/onitsukatiger_hp_mexico66_cud_ss.webp" alt="Image 4"/></div>
+                <div class="carousel-item2"><img src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/08/20240717083906-0.webp" alt="Image 5"></div>
             </div>
             <button class="button2">></button>
         </div>
@@ -222,46 +260,59 @@
         <section class="famous-brands">
             <div class="line1-1">
                 <article class="item">
+                    <a href="#">
                 <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/06/Nike-Air-Force-1-Low-Travis-Scott-Cactus-Jack.png" alt="image"/>
-                <h3>Nike</h3>
+                <h3>Nike</h3></a>
                 </article>
                 <article class="item">
+                    <a href="#">
                 <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/IE0586.webp" alt="image"/>
-                <h3>Adidas</h3>
+                <h3>Adidas</h3></a>
                 </article>
                 <article class="item">
+                    <a href="#">
                 <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/895934_01.jpg_8223ed9759b54c8783260d28aad3cb73-600x347.png" alt="image"/>
-                <h3>Jordan</h3>
+                <h3>Jordan</h3></a>
                 </article>
                 <article class="item">
+                    <a href="#">
                 <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/10/ABPT043-11-A-1-600x298.png" alt="image"/>
-                <h3>Lining</h3>
+                <h3>Lining</h3></a>
                 </article>
-                <article class="item">                
+                <article class="item">
+                    <a href="#">                
                 <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/Giay-New-Balance-530-Retro-Runni-removebg-preview.png" alt="image"/>
-                <h3>New Balance</h3>
+                <h3>New Balance</h3></a>
                 </article>
             </div>
             <div class="line1-2">
                 <article class="item">
+                    <a href="#">
                     <img  onclick="" src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/brand-4.png" alt="image"/>
-                    <h3>MLB</h3>
+                    <h3>MLB</h3></a>
                 </article>
                 <article class="item">
+                    <a href="#">
                     <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/06/De%CC%81p-Yeezy-Slide-chi%CC%81nh-ha%CC%83ng.png" alt="image"/>
                     <h3>Yeezy slide</h3>
+                    </a>
                 </article>
                 <article class="item">
+                    <a href="#">
                     <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/nike-kobe-6-protro-reverse-grinc-removebg-preview.png" alt="image"/>
                     <h3>Nike Kobe</h3>
+                    </a>
                 </article>
                 <article class="item">
+                    <a href="#">
                     <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/06/Nike-LeBron-20-Time-Machine.png" alt="image"/>
-                    <h3>Nike LeBron</h3>
+                    <h3>Nike LeBron</h3></a>
                 </article>
                 <article class="item">
+                    <a href="#">
                     <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/04/Giay-Puma-Palermo-Leather-White-Black-396464-01-1-600x247.png" alt="image"/>
                     <h3>Puma</h3>
+                    </a>
                 </article>
             </div>
         </section>
@@ -269,11 +320,86 @@
         <div class="picture">
             <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/07/663742.webp" alt="image"/>
         </div>
-        <script src="script.js"></script>
+
+        <h2>Các sản phẩm đến từ thương hiệu Adidas</h2>
+        <p>Mua sắm ngay giày Yeezy, samba, giày chạy Adidas cho mùa hè 2024!!!</p>
+        <section class="adidas-product">
+            <a href="#"><img src="https://brand.assets.adidas.com/image/upload/running_2024_tier1_sponsored_boston_marathon_reactive_marathon_winner_launch_plp_image_collection_1_d_d4c72a4410.jpg" alt="image"/></a>
+            
+            <article class="adidas-details-line1">
+                <a href="#">
+                    <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/screenshot_2023.01.03_16.50.05.274_fce7fb7e7e944f2c82401da6765bdda9.png" alt="image"/>
+                    <h3>Giày Adidas Campus 00s 'Black Cloud White' HQ8708"</h3>
+                    <h3>2,700,000đ</h3>
+                </a>
+                <a href="#">
+                    <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/upload_058fbbc3c8dc4b6085d8617eef5083ad.jpg" alt="image"/>
+                    <h3>Giày Adidas Yeezy Boost 350 V2 'Onyx' HQ4540</h3>
+                    <h3>4,500,000đ - 5,900,000đ</h3>
+                </a>
+            </article>
+            <article class="adidas-details-line2">
+                <a href="#">
+                    <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/152983_01.jpg_f049db9e6b814892846252d9cbd60109.jpeg" alt="image"/>
+                    <h3>Giày Adidas UltraBoost 3.0 'Aqua Blue' S82055</h3>
+                    <h3>5,500,000đ</h3>
+                </a>
+                <a href="#">
+                    <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/gw7261.png_3f997de7bad843e9a43f0d6154cf8d06-768x354.png" alt="image"/>
+                    <h3>Giày Adidas Adizero Adios Pro 3 'To run is to Live' GW7261</h3>
+                    <h3>7,200,000đ</h3>
+                </a>
+            </article>
+            <article class="adidas-details-line3">
+                <a href="#">
+                    <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/10/IH5564.png-1.png" alt="image"/>
+                    <h3>Giày Adidas Adizero Adios Pro EVO 1 ‘White Black’ IH5564</h3>
+                    <h3>15,500,000đ</h3>
+                </a>
+                <a href="#">
+                    <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/screenshot_2022.02.22_19.39.27.235_bde0713b25434d5d864760f58ebf003e.png" alt="image"/>
+                    <h3>Giày Adidas Ultraboost 22 'Red' GX5462</h3>
+                    <h3>3,850,000đ</h3>
+                </a>
+            </article>
+        </section>
+
+        <button id="back-to-top" onclick="scrollToTop()">^</button>
+        <script>
+            window.onscroll = function() {
+            var btn = document.getElementById("back-to-top");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+        }
+  };
+
+  // Back-to-top function
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+        </script>
+
+        <section class="news">
+            
+                <a href="C:\Users\PC\Documents\Sneakeraddictor\SneakerNews\News1.html">
+                    <img src="https://sneakernews.com/wp-content/uploads/2023/03/air-jordan-4-bred-reimagined-2024-info.jpg" alt="image"/>
+                    <h3>Những phiên bản Jordan 4 cập bến năm 2024</h3>
+                </a>
+                <a href="#">
+                    <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/05/nike-offwhite-the-ten_5d63d4a3609d41cf83583704e90914a3_2048x2048.jpeg" alt="image"/>
+                    <h3>Bộ sưu tập Off-White™ x Nike “The Ten” sẽ được đem ra bán đấu giá</h3>
+                </a>
+                <a href="#">
+                    <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/05/c6_a1ng-hi_e1_bb_87u-th_e1_bb_9di-trang-_c4_91_e1_bb_8bch-th_e1_bb_a7_832caeebf19d4000bb82682de0c62905_2048x2048.png" alt="image"/>
+                    <h3>Liệu 2 anh em nhà Adidas và Puma có đường ai nấy đi sau những biến động?</h3>
+                </a>
+        </section>
 
         <footer class="ft">
             <section class="content">
-                <a href="Home.html"><img  src="https://scontent.xx.fbcdn.net/v/t1.15752-9/454267627_2123587494708051_1219349234101137520_n.png?stp=dst-png_p206x206&_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=y-1s0BGl5TkQ7kNvgFH4C3V&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QH7xaYJPI4WZ3kToNXGNzNN_ENP-2sEdgfMrncIMcJQjw&oe=66D9D8D6" alt="image"/></a>
+                <a href="Home.html"><img  src="/Users/PC/Pictures/Screenshots/Ảnh chụp màn hình 2024-07-30 103502.png" alt="image"/></a>
                <p>Hộ kinh doanh Trần Công Đạt MST : 06A8127229</p>
               <p>SneakerAddictor - Nhà sưu tầm và phân phối các sản phẩm đến từ các thương hiệu thời trang quốc tế hàng đầu Việt Nam</p>
               <h2>Hệ thống cửa hàng</h2>
