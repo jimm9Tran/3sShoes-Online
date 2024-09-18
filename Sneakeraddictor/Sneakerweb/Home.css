@@ -9,6 +9,7 @@ body{
     margin: 10px 20px;
     align-items: center;
     justify-content: space-around;
+    height: 100px;
 }
 .logo>a>img{
     width: 150px;
@@ -95,7 +96,7 @@ nav>.menu>li>.dropdown>li:last-child{
     border-bottom: none;
 }
 nav>.menu>li>.dropdown>li:hover{
-    background-color: rgb(8, 133, 8);
+    background-color: rgb(192, 190, 190);
 }
 .log-in{
     width: 80px;
@@ -110,7 +111,7 @@ nav>.menu>li>.dropdown>li:hover{
     text-decoration: none;
 }
 .sign-up{
-    width: 80px;
+    width: 63px;
     background-color: black;
     border: 1px solid black;
     height: 30px;
@@ -173,7 +174,7 @@ nav>.menu>li>.dropdown>li:hover{
     border-bottom: none;
 }
 .dropdown-menu>.menu2>li>.brand1>li:hover{
-    background-color: rgb(8, 133, 8);
+    background-color: rgb(192, 190, 190);
 }
 .dropdown-menu>.menu2>li>.brand1>li>a{
     color: black;
@@ -199,7 +200,7 @@ nav>.menu>li>.dropdown>li:hover{
     border-bottom: none;
 }
 .dropdown-menu>.menu2>li>.brand1>li>.brand2>li:hover{
-    background-color: rgb(8, 133, 8);
+    background-color: rgb(192, 190, 190);
 }
 
 /*========================slide-images===================*/
@@ -369,6 +370,7 @@ nav>.menu>li>.dropdown>li:hover{
     height: 270px;
     transition: transform 0.5s ease;
     margin: 10px 20px;
+    color: #111111;
 }
 .product-list>.line1>.product:hover{
     transform: scale(1.1);
@@ -387,6 +389,7 @@ nav>.menu>li>.dropdown>li:hover{
     height: 270px;
     transition: transform 0.5s ease;
     margin: 10px 20px;
+    color: #111111;
 }
 .product-list>.line2>.product:hover{
     transform: scale(1.1);
@@ -405,6 +408,7 @@ nav>.menu>li>.dropdown>li:hover{
     height: 270px;
     transition: transform 0.5s ease;
     margin: 10px 20px;
+    color: #111111;
 }
 .product-list>.line3>.product:hover{
     transform: scale(1.1);
@@ -425,7 +429,9 @@ nav>.menu>li>.dropdown>li:hover{
 }
 .famous-brands>.line1-1{
     display: flex;
+    text-align: center;
     margin-bottom: 10px;
+    color: #111111;
 }
 .famous-brands>.line1-1>.item{
     background-color: #fff;
@@ -440,9 +446,12 @@ nav>.menu>li>.dropdown>li:hover{
     width: 220px;
     height: 140px;
 }
+
 .famous-brands>.line1-2{
     display: flex;
+    text-align: center;
     margin-bottom: 10px;
+    color: #111111;
 }
 .famous-brands>.line1-2>.item{
     background-color: #fff;
@@ -471,6 +480,7 @@ nav>.menu>li>.dropdown>li:hover{
     height: 600px;
     margin-bottom: 20px;
     border-bottom: 1px solid black;
+    color: #111111;
 
 }
 .adidas-product>a{
@@ -559,6 +569,7 @@ nav>.menu>li>.dropdown>li:hover{
 .news{
     margin-bottom: 20px;
     display: flex;
+    color: #111111;
 }
 .news>a{
     width: 400px;
@@ -601,6 +612,7 @@ nav>.menu>li>.dropdown>li:hover{
     border-top: 1px solid black;
     margin-top: 20px;
     padding-top: 15px;
+    color: #111111;
 }
 .ft>.content{
     margin-left: 40px;
