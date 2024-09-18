@@ -1,0 +1,45 @@
+{
+    "brands":[
+
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2023/06/Nike-Air-Force-1-Low-Travis-Scott-Cactus-Jack.png",
+            "name": "Nike"
+        },
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/IE0586.webp",
+            "name": "Adidas"
+        },
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/895934_01.jpg_8223ed9759b54c8783260d28aad3cb73-600x347.png",
+            "name": "Jordan"
+        },
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2023/10/ABPT043-11-A-1-600x298.png",
+            "name": "Lining"
+        },
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/brand-4.png",
+            "name": "MLB"
+        },
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2023/06/De%CC%81p-Yeezy-Slide-chi%CC%81nh-ha%CC%83ng.png",
+            "name": "Yeezy slide"
+        },
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/Giay-New-Balance-530-Retro-Runni-removebg-preview.png",
+            "name": "New Balance"
+        },
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/nike-kobe-6-protro-reverse-grinc-removebg-preview.png",
+            "name": "Nike Kobe"
+        },
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2023/06/Nike-LeBron-20-Time-Machine.png",
+            "name": "Nike Lebron"
+        },
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2024/04/Giay-Puma-Palermo-Leather-White-Black-396464-01-1-600x247.png",
+            "name": "Puma"
+        }
+    ]
+}
