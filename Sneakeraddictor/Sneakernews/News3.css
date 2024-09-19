@@ -54,10 +54,11 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
+
 /*======================nav========================*/
 nav{
     margin: 0px 10px;
-
+    position: fixed;
 }
 a{
     text-decoration: none;
@@ -222,7 +223,7 @@ body>#news-img{
 }
 
 .Main-news>p{
-    width: 980px;
+    width: 950px;
     font-size: 17px;
     margin: 15px 150px;
 }
