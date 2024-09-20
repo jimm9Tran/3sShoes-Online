@@ -565,6 +565,8 @@ nav>.menu>li>.dropdown>li:hover{
     transform: scale(1.1);
 }
 
+/*==============See-more==============*/
+
 /*=============News===================*/
 .news{
     margin-bottom: 20px;
@@ -604,6 +606,7 @@ nav>.menu>li>.dropdown>li:hover{
   #back-to-top:hover {
     background-color: #555;
   }
+  
 /*=============footer=================*/
 .ft{
     display: flex;

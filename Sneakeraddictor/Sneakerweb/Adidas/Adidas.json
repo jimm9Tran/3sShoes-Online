@@ -1,0 +1,24 @@
+{
+    "Adidas-products": [
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/8609_01.jpg_730e52ab95f04401a870e9ac2aa8aad8-600x282.jpeg",
+            "name": "Giày Adidas Superstar OG 'Vintage White' C77124",
+            "price": "2,100,000đ-2,300,000đ"
+        },
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/main-square_b757b88e-796a-46ad-9_c9c5655114704bd2b8aac19a0ff22802-768x308.png",
+            "name": "Giày Adidas Samba ‘Wales Bonner Silver’ IG8181",
+            "price": "15,000,000đ"
+        },
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/848748_01.jpg_a52b5d7ae3554015b02806421c0283e0.png",
+            "name": "Giày Adidas Yeezy Boost 350 'Beluga Reflective' GW1229",
+            "price": "6,000,000-6,800,000đ"
+        },
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2023/11/adidas-originals-women-superstar-x-hello-kitty-white-core-gw7168-521_1024x1024.png",
+            "name": "Giày Adidas Superstar x Hello Kitty ‘White Multi’ GW7168",
+            "price": "5,000,000đ"
+        }
+    ]
+}
