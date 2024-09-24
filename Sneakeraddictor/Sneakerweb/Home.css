@@ -101,6 +101,7 @@ nav>.menu>li>.dropdown>li:hover{
 .log-in{
     width: 80px;
     border: 1px solid black;
+    border-radius: 7px;
     margin-right: 5px;
     height: 30px;
     align-items: center;
@@ -114,6 +115,7 @@ nav>.menu>li>.dropdown>li:hover{
     width: 63px;
     background-color: black;
     border: 1px solid black;
+    border-radius: 7px;
     height: 30px;
     align-items: center;
 }
@@ -360,7 +362,6 @@ nav>.menu>li>.dropdown>li:hover{
     margin-bottom: 20px;
     height: 870px;
     padding: 15px 10px;
-    border-bottom: 1px solid #111111;
 }
 .product-list>.line1{
     display: flex;
