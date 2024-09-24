@@ -568,7 +568,8 @@ nav>.menu>li>.dropdown>li:hover{
 
 /*==============See-more==============*/
 .see-more{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #111111;
+   padding-bottom: 20px; 
     margin-bottom: 20px;
     text-align: center;
 }
