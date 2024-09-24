@@ -235,7 +235,7 @@ nav>.menu>li>.dropdown>li:hover{
     display: flex;
 }
 .adidas-product>.filter{
-    width: 120px;
+    width: 150px;
     margin: 0px 15px;
 }
 .adidas-product>.filter>a{
@@ -248,8 +248,22 @@ nav>.menu>li>.dropdown>li:hover{
     width: 120px;
     height: 25px;
     border-bottom: 1px solid rgb(42, 42, 42);
-
 }
+
+.adidas-product>.filter>.range-container{
+    margin: 10px;
+}
+.adidas-product>.filter>.range-container>.range-labels{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.adidas-product>.filter>.range-container>.range-output{
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+.adidas-product>.filter>.range-container>.range-output
 
 .adidas-product>.split{
   height: auto;
@@ -271,7 +285,7 @@ nav>.menu>li>.dropdown>li:hover{
 }
 
 .adidas-product>.split>.adidas-details-line1{
-    margin: 18px 97px;
+    margin: 16px 97px;
     display: flex;
 
 }
@@ -297,7 +311,7 @@ nav>.menu>li>.dropdown>li:hover{
 
 .adidas-product>.split>.adidas-details-line2{
     margin-left: 97px;
-    margin-top: 55px;
+    margin-top: 45px;
     display: flex;
 
 }
@@ -342,6 +356,56 @@ nav>.menu>li>.dropdown>li:hover{
     border-radius: 10px;
 }
 .adidas-product>.split>.adidas-details-line3>.product>a>h4{
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+.adidas-product>.split>.adidas-details-line4{
+    margin: 50px 97px;
+    display: flex;
+
+}
+.adidas-product>.split>.adidas-details-line4>.product{
+   margin-top: 15px;
+   margin-bottom: 10px;
+   margin-right: 20px;
+   width: 230px;
+   height: 160px;
+}
+.adidas-product>.split>.adidas-details-line4>.product>a{
+    text-decoration: none;
+}
+.adidas-product>.split>.adidas-details-line4>.product>a>img{
+    width: 230px;
+    height: 130px;
+    border-radius: 10px;
+}
+.adidas-product>.split>.adidas-details-line4>.product>a>h4{
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+.adidas-product>.split>.adidas-details-line5{
+    margin: 50px 97px;
+    display: flex;
+
+}
+.adidas-product>.split>.adidas-details-line5>.product{
+   margin-top: 15px;
+   margin-bottom: 10px;
+   margin-right: 20px;
+   width: 230px;
+   height: 160px;
+}
+.adidas-product>.split>.adidas-details-line5>.product>a{
+    text-decoration: none;
+}
+.adidas-product>.split>.adidas-details-line5>.product>a>img{
+    width: 230px;
+    height: 130px;
+    border-radius: 10px;
+}
+.adidas-product>.split>.adidas-details-line5>.product>a>h4{
     font-size: 16px;
     margin: 10px 0px;
 }

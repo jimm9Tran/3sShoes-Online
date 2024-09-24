@@ -198,6 +198,31 @@
                 <p>46 1/2</p>
                 <p>46 2/3</p>
                 </a>
+                <div class="range-container">
+                    <h2>Lọc theo mức giá:</h2>
+                    <div class="range-output">
+                        Giá từ: <span id="minPrice">1.2</span> triệu đồng đến <span id="maxPrice">20</span> triệu đồng
+                    </div>
+            
+                    <label for="priceRange">Chọn mức giá:</label>
+                    <input type="range" id="priceRange" min="1200000" max="20000000" value="1200000" step="100000">
+            
+                    <div class="range-labels">
+                        <span>1.2 triệu</span>
+                        <span>20 triệu</span>
+                    </div>
+                </div>
+
+                <script>
+                    const priceRange = document.getElementById('priceRange');
+                    const minPrice = document.getElementById('minPrice');
+                    const maxPrice = document.getElementById('maxPrice');
+
+                    priceRange.addEventListener('input', function(){
+                        let value = priceRange.value;
+                        minPrice.textContent = (value / 1000000).toFixed(1);
+                    });
+                </script>
             </div>
             <div class="split">
             <div class="para" id="para"><p>Bên cạnh những thương hiệu đình đám trong nghành công nghiệp giày thể thao như Puma, New Balance hay Reebok thì có một cái tên khác mà chắc chắn cho dù bạn là một người không có hứng thú với giày thể thao thì cũng đã từng nghe qua và biết đến họ, đó chính là Adidas, gã khổng lổ đến từ nước Đức, sở hữu cho mình một thị phần khổng lồ trong thị trường cũng như là một thương hiệu lâu đời xuất hiện ở khắp nơi trên thế giới. Nhưng liệu mấy ai biết, đằng sau những thành tựu ấy là những câu chuyện đầy bất ngờ về “gã khổng lồ” của ngành thời trang thể thao toàn cầu.
@@ -311,7 +336,67 @@
                         <h4>2,300,000đ</h4>
                     </a>
                 </article>
-            </section>        
+            </section>    
+            <section class="adidas-details-line4">
+                <article class="product">
+                    <a href="#">
+                        <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/adidas-campus-00s-h034721_8f5fc05731044b63a6778ed15a9acfd8-768x347.png" alt="image"/>
+                        <h4>Giày Adidas Campus 00s 'Dark Green' H03472</h4>
+                        <h4>2,650,000đ</h4>
+                    </a>
+                </article>
+                <article class="product">
+                    <a href="#">
+                        <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/12/Campus_00s_Shoes_Pink_ID3173_01-768x363.png" alt="image"/>
+                        <h4>Giày Adidas Campus 00s 'Putty Mauve' ID31</h4>
+                        <h4>2,450,000đ</h4>
+                    </a>
+                </article>
+                <article class="product">
+                    <a href="#">
+                        <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/fz4990_928954a2a8d44c7694789e7af139f737.jpeg" alt="image"/>
+                        <h4>Giày Adidas Yeezy Boost 380 'Hylte' FZ4990</h4>
+                        <h4>6,500,000đ-6,800,000đ</h4>
+                    </a>
+                </article>
+                <article class="product">
+                    <a href="#">
+                        <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/773119_01.jpg_7b7960b60e4149f2958df27157f24c08-768x377.png" alt="image"/>
+                        <h4>Giày Adidas NMD_R1 'Black OG' GZ7922</h4>
+                        <h4>3,000,000đ</h4>
+                    </a>
+                </article>      
+            </section>    
+            <section class="adidas-details-line5">
+                <article class="product">
+                <a href="#">
+                    <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/Giay-Adidas-Forum-Low-Core-Black-IG5513-5.png" alt="image"/>
+                    <h4>Giày Adidas Forum Low 'Core Black' IG5513</h4>
+                    <h4>3,100,000đ</h4>
+                </a>
+                </article>
+                <article class="product">
+                    <a href="#">
+                        <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/adidas-yeezy-700-v3-azael-product_f998e9f808ca4271bbd7a2710e6fd1e8-768x549.jpg" alt="image"/>
+                        <h4>Giày Adidas Yeezy 700 V3 'Azael' FW4980</h4>
+                        <h4>7,500,000đ</h4>
+                    </a>
+                </article>
+                <article class="product">
+                    <a href="#">
+                        <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/adidas-gazelle-indoor-blue-fusio__2__c1db34e50c1b455a8f0297f85b265e5d.png" alt="image"/>
+                        <h4>Giày Adidas Gazelle Indoor 'Blue Fusion' HQ8717</h4>
+                        <h4>4,500,000đ</h4>
+                    </a>
+                </article>
+                <article class="product">
+                    <a href="#">
+                        <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/screenshot_2022.10.03_13.30.05.579_32adc13e37da42fbb39b9be3ce5dd8e3.png" alt="image"/>
+                        <h4>Giày Adidas Ultraboost 22 Cold Rdy 2.0 'Beige' GX6735</h4>
+                        <h4>2,750,000đ</h4>
+                    </a>
+                </article>
+            </section>
         </div>
         </section>
 

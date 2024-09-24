@@ -142,3 +142,18 @@ fetch(postApi)
         alert('Error!!!');
 
     });
+
+/*========================================*/
+
+const content = document.getElementById("para");
+const seeMoreBtn = document.getElementById("see-more-btn");
+
+seeMoreBtn.addEventListener("click", function() {
+    content.classList.toggle("expanded");
+
+    if (content.classList.contains("expanded")) {
+        seeMoreBtn.textContent = "Thu gọn";
+    } else {
+        seeMoreBtn.textContent = "Xem thêm";
+    }
+});
