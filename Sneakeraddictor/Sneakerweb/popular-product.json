@@ -1,0 +1,50 @@
+{
+    "popular-product":[
+
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/new-balance-1906r-white-gold-pro_31390e9a8ba5449fa50ca2022380b8ec-768x380.png",
+            "name": "Giày New Balance 1906R 'White Gold' M1906RA",
+            "price": "3,500,000đ"
+        },
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/ct8529410_800x_062256fd6bf14a4daa9f2927d733178c.png",
+            "name": "Giày Nike Jordan 6 Retro University Blue CT8529-410",
+            "price": "6,500,000đ"
+        },
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/665623_01.jpg_a48e3332d3014358b7_9e9cf4da61a849acadc73e09482ae19d.png",
+            "name": "Giày Adidas Ultra 4D ‘Chalk White’ FX4089",
+            "price": "5,500,000đ-6,500,000đ"
+        },
+        {
+            "img": "https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/585307_01.jpg_e5aab0261a554535b9e5da9a0d95b97d-768x361.png",
+            "name": "Giày Nike Air Force 1 Low Supreme “White” CU9225-100",
+            "price": "4,500,000đ"
+        },
+        {
+            "img": "./img/Img-giày/Air zoom challenge.png",
+            "name": "Giày Nike Air Zoom Challenge 'White Pink Retro' FQ4155-101",
+            "price": "4,500,000đ"
+        },
+        {
+            "img": "./img/Img-giày/Jordan-zion.png",
+            "name": "Giày Nike Zion Williamson x Air Jordan 1 Retro Low OG 'Voodoo' DZ7292-200",
+            "price": "10,900,000đ-11,500,000đ"
+        },
+        {
+            "img": "./img/Img-giày/Jordan-1-nothing-but-net.jpg",
+            "name": "Giày Nike Air Jordan 1 Low SE 'Nothing But Net' CZ8659-100",
+            "price": "7,500,000đ-8,100,000đ"
+        },
+        {
+            "img": "",
+            "name": "Giày Vans Fear of God x Mountain Edition 35 DX ‘Collection 2’ VN0A3MQ4PQP",
+            "price": "15,600,000đ"
+        },
+        {
+            "img": "",
+            "name": "Giày Nike Air Jordan 4 Retro ‘Oxidized Green’ FQ8138-103",
+            "price": "5,500,000đ"
+        }
+    ]
+}

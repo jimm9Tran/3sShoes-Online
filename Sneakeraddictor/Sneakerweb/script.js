@@ -157,3 +157,16 @@ seeMoreBtn.addEventListener("click", function() {
         seeMoreBtn.textContent = "Xem thêm";
     }
 });
+
+
+/*========================News-menu=========================*/
+
+const carousel = document.getElementById('carousel-menu-news');
+
+function leftclick(){
+    carousel.scrollBy({left: -200, behavior: "smooth"});
+}
+
+function rightclick(){
+    carousel.scrollBy({left: 200, behavior: "smooth"});
+}
