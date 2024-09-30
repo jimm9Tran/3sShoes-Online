@@ -9,6 +9,7 @@ body{
     margin: 10px 20px;
     align-items: center;
     justify-content: space-around;
+    height: 100px;
 }
 .logo>a>img{
     width: 150px;
@@ -75,11 +76,12 @@ nav>.menu>li{
 nav>.menu>li>.dropdown{
     background-color: #fff;
     position: absolute;
-    width: 93px;
+    width: 120px;
     list-style: none;
     display: none;
     border: 1px solid black;
     margin-top: 3px;
+    z-index: 3;
 }
 nav>.menu>li:hover>.dropdown{
     display: block;
@@ -89,7 +91,9 @@ nav>.menu>li>.dropdown>li{
     border-bottom: 1px solid black;
     align-items: center;
     top: 60px;
+    height: 50px;
     margin-bottom: 5px;
+    text-align: center;
 }
 nav>.menu>li>.dropdown>li:last-child{
     border-bottom: none;
@@ -160,7 +164,7 @@ nav>.menu>li>.dropdown>li:hover{
     width: 250px;
     margin-top: 10px;
     display: none;
-    height: 285px;
+    height: 250px;
     z-index: 3;
 }
 .dropdown-menu>.menu2>li:hover>.brand1{
@@ -182,13 +186,13 @@ nav>.menu>li>.dropdown>li:hover{
     text-decoration: none;
 }
 .dropdown-menu>.menu2>li>.brand1>li>.brand2{
+    border-radius: 3%;
     background-color: #fff;
     list-style: none;
     width: 250px;
     margin-top: 10px;
     display: none;
-    height: 180px;
-    border-radius: 3%;
+    height: 250px;
 }
 .dropdown-menu>.menu2>li>.brand1>li:hover>.brand2{
     display: block;
@@ -203,89 +207,3 @@ nav>.menu>li>.dropdown>li:hover{
 .dropdown-menu>.menu2>li>.brand1>li>.brand2>li:hover{
     background-color: rgb(192, 190, 190);
 }
-
-/*==========================Main-news============================*/
-.Main-news{
-    margin: 20px 0px;
-    width: 1300px;
-}
-.Main-news>h2{
-    font-size: 23px;
-    margin: 20px 205px;
-}
-.Main-news>p{
-    font-size: 18px;
-    margin: 10px 205px;
-}
-.Main-news>img{
-    width: 900px;
-    height: 680px;
-    margin-left: 205px;
-}
-
-/*====================Back-to-top===============================*/
-#back-to-top{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #7b7979;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    display: none; /* Ẩn nút mặc định */
-    transition: all 0.3s ease;
-  }
-
-  /* Thay đổi kiểu nút khi di chuột */
-  #back-to-top:hover {
-    background-color: #555;
-  }
-
-/*==========================footer==============================*/
-
-.ft{
-    display: flex;
-    width: 1350px;
-    height: 325px;
-    border-top: 1px solid black;
-    margin-top: 20px;
-    padding-top: 15px;
-    color: #111111;
-}
-.ft>.content{
-    margin-left: 40px;
-    width: 350px;
-    margin-bottom: 15px;
-}
-.ft>.content>a>img{
-    width: 110px;
-    height: 95px;
-}
-.ft>.content>legend{
-    border-bottom: 1px solid grey;
-    width: 120px;
-    margin-bottom: 12px;
-    font-weight: bold;
-}
-.ft>.content>.sile1>a>img{
-    width: 40px;
-    height: 40px;
-}
-.ft>.content>.content1{
-    margin-top: 35px;
-}
-.ft>.content>.content1>legend{
-    border-bottom: 1px solid grey;
-    width: 120px;
-    margin-bottom: 12px;
-    font-weight: bold;
-}
-.ft>.content>p{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 150px;
-}
-
-
