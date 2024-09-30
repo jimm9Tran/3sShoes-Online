@@ -259,6 +259,7 @@ nav>.menu>li>.dropdown>li:hover{
 .carousel-container>.button2>.next {
     right: 10px;
 }
+
 .categories{
     background-color: #fff;
     display: flex;
@@ -270,10 +271,10 @@ nav>.menu>li>.dropdown>li:hover{
 }
 .categories>div{
     margin: 5px 10px;
-    background-color:  rgb(192, 190, 190);
+    background-color: #111111;
     border: 1px solid #fff;
     border-radius: 10px;
-    height: 40px;
+    height: 50px;
     transition: transform 0.5s ease;
 }
 .categories>div:hover{
@@ -281,7 +282,7 @@ nav>.menu>li>.dropdown>li:hover{
 }
 .categories>div>a{
     justify-content: center;
-    color: rgb(83, 83, 83);
+    color: #fff;
     text-decoration: none;
     align-items: center;
 }
@@ -587,17 +588,17 @@ nav>.menu>li>.dropdown>li:hover{
 }
 .autumn-product>.autumn-product-line1>.product{
     width: 310px;
-    height: 300px;
+    height: 230px;
     margin: 20px 15px;
     border: 0.25px solid #cecccc;
-    border-radius: 15px;
+    border-radius: 16px;
 }
 .autumn-product>.autumn-product-line1>.product>a{
     text-decoration: none;
 }
 .autumn-product>.autumn-product-line1>.product>a>img{
     width: 270px;
-    height: 180px;
+    height: 150px;
 }
 .autumn-product>.autumn-product-line1>.product>a>h4{
     font-size: 17px;    
@@ -609,17 +610,17 @@ nav>.menu>li>.dropdown>li:hover{
 }
 .autumn-product>.autumn-product-line2>.product{
     width: 310px;
-    height: 300px;
+    height: 240px;
     margin: 20px 15px;
     border: 0.25px solid #cecccc;
-    border-radius: 15px;
+    border-radius: 16px;
 }
 .autumn-product>.autumn-product-line2>.product>a{
     text-decoration: none;
 }
 .autumn-product>.autumn-product-line2>.product>a>img{
     width: 270px;
-    height: 180px;
+    height: 150px;
 }
 .autumn-product>.autumn-product-line2>.product>a>h4{
     font-size: 17px;    
@@ -631,10 +632,10 @@ nav>.menu>li>.dropdown>li:hover{
 }
 .autumn-product>.autumn-product-line3>.product{
     width: 310px;
-    height: 300px;
+    height: 240px;
     margin: 20px 15px;
     border: 0.25px solid #cecccc;
-    border-radius: 15px;
+    border-radius: 16px;
 }
 .autumn-product>.autumn-product-line3>.product>a{
     text-decoration: none;
@@ -642,7 +643,7 @@ nav>.menu>li>.dropdown>li:hover{
 }
 .autumn-product>.autumn-product-line3>.product>a>img{
     width: 270px;
-    height: 180px;
+    height: 150px;
 }
 .autumn-product>.autumn-product-line3>.product>a>h4{
     font-size: 17px;    
@@ -718,6 +719,7 @@ nav>.menu>li>.dropdown>li:hover{
     cursor: pointer;
     display: none; /* Ẩn nút mặc định */
     transition: all 0.3s ease;
+    z-index: 2;
   }
 
   /* Thay đổi kiểu nút khi di chuột */

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="google" content="no-translate"/>
+        <link rel="stylesheet" href="News4.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="script.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <title>SneakerAddictor-Home</title>
+    </head>
+    <body>
+        <header class="logo">
+            <a href="file:///C:/Users/PC/Documents/3sShoes-Online/Sneakeraddictor/Sneakerweb/Home.html">
+                <img src="C:\Users\PC\Pictures\Screenshots\Ảnh chụp màn hình 2024-07-30 103502.png" alt="image"/>  
+            </a>
+           
+            <nav>
+            <ul class="menu">
+                <li><a href="#">Tin Tức</a></li>
+                <li><a href="#">Về chúng tôi
+                    <ul class="dropdown">
+                        <li><a href="#">Lịch sử ra đời</a></li>
+                        <li><a href="#">Độ uy tín</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                    </ul>
+                    </a>
+                </li>
+                <li><a href="#">Helps</a></li>
+                <li><a href="#">Mua bán, trao đổi
+                    <ul class="dropdown">
+                   <li><a href="#">Giày bóng rổ 2hand</a></li>
+                   <li><a href="#">Giày casual 2hand</a></li>
+                    <li><a href="#">Thu giày new, 2hand</a></li>
+                    </ul>
+                    </a>
+                </li>
+            </ul>
+            </nav>
+
+            <img src="https://www.freeiconspng.com/uploads/search-icon-png-21.png" alt="Tìm kiếm" id="openModal" style="cursor: pointer; width: 35px; height: 35px; margin-left: 10px;" />
+            <div id="searchModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm..." />
+                    <br><br>
+                    <button onclick="submitSearch()"><img src="https://www.freeiconspng.com/uploads/search-icon-png-21.png" alt="Tìm kiếm" id="openModal" style="cursor: pointer; width: 25px; height: 25px; margin-left: 10px;" /></button>
+                </div>
+            </div>
+            <script>
+                var modal = document.getElementById("searchModal");
+                var btn = document.getElementById("openModal");
+                var span = document.getElementsByClassName("close")[0];
+
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+            modal.style.display = "none";
+             }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function submitSearch() {
+            var keyword = document.getElementById("searchInput").value;
+            if (keyword) {
+                alert("Bạn đã tìm kiếm: " + keyword);
+                modal.style.display = "none";
+            } else {
+                alert("Vui lòng nhập từ khóa tìm kiếm.");
+            }
+        }
+            </script>
+
+            <div class="log-in"><a href="Login.html">Đăng nhập</a></div>
+            <div class="sign-up"><a href="Signup.html">Đăng ký</a></div>
+            <div class="cart">
+                <a href="#">
+                <img src="C:\Users\PC\Pictures\Screenshots\Ảnh chụp màn hình 2024-09-10 162015.png" alt="image"/></a>
+            </div>
+        </header>
+        <nav class="dropdown-menu">
+            <ul class="menu2">
+                <li><a href="">Thương hiệu</a>
+                    <ul class="brand1">
+                        <li><a href="#">Nike</a></li>
+                        <li><a href="#">Adidas</a></li>
+                        <li><a href="#">Jordan</a></li>
+                        <li><a href="#">Puma</a></li>
+                        <li><a href="#">MLB</a></li>
+                        <li><a href="#">Asics</a></li>
+                    </ul>
+                    <ul class="brand1">
+                        <li><a href="#">Nike</a></li>
+                        <li><a href="#">Adidas</a></li>
+                        <li><a href="#">Jordan</a></li>
+                        <li><a href="#">Puma</a></li>
+                        <li><a href="#">Fear of God</a></li>
+                        <li><a href="#">MLB</a></li>
+                        <li><a href="#">Asics</a></li>
+                        <li><a href="#">Converse</a></li>
+                        <li><a href="#">Lining</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Hàng mới</a></li>
+                <li><a href="#">Giày Sneakers casual</a>
+                    <ul class="brand1">
+                        <h3>Top models</h3>
+                        <li><a href="#">Air Jordan</a></li>
+                        <li><a href="#">Converse 1970s</a></li>
+                        <li><a href="#">Nike Air Force 1</a></li>
+                        <li><a href="#">New Balance 9060</a></li>
+                        <li><a href="#">Nike Air Max</a></li>
+                        <li><a href="#">Nike Cotez</a></li>
+                        <li><a href="#">AdidasUltraboost</a></li>
+                        <li><a href="#">Adidas Yeezy</a></li>
+                    </ul>                
+                </li>
+                <li><a href="#">Giày Sneakers bóng rổ</a>
+                    <ul class="brand1">
+                        <li><a href="#">Giày New</a></li>
+                        <li><a href="#">Chuyên outdoor</a></li>
+                        <li><a href="#">Chuyên indoor</a></li>
+                        <li><a href="#">Hiệu năng cao</a></li>
+                        <li><a href="#">Giá rẻ</a>
+                            <ul class="brand2">
+                                <li><a href="#">Dưới 500k</a></li>
+                                <li><a href="#">Từ 500k đến dưới 800k</a></li>
+                                <li><a href="#">Từ 800k đến dưới 1 triệu</a></li>
+                                <li><a href="#">Trên 1 triệu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Phụ kiện</a>
+                    <ul class="brand1">
+                        <li><a href="">Quần áo bóng rổ</a></li>
+                        <li><a href="#">Balo</a></li>
+                        <li><a href="#">Tất</a></li>
+                        <li><a href="#">Băng đô, áo combat</a></li>
+                        <li><a href="#">Bó gối</a></li>
+                        <li><a href="#">Dây giày thay thế</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Khác</a>
+                    <ul class="brand1">
+                        <li><a href="#">Vòng tay silicon</a></li>
+                        <li><a href="#">Mũ NBA</a></li>
+                        <li><a href="#">Móc khóa bóng rổ</a></li>
+                        <li><a href="#">Mô hình cầu thủ</a></li>
+                        <li><a href="#">Khăn, bình nước Gatorade</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section class="news">
+            <h2>Jordan 1 High 85 là gì? Những phiên bản nổi bật nhất của năm 2023</h2>
+            <p>Được thiết kế độc quyền cho nhu cầu của Michael Jordan vào năm 1985. 
+                Khởi nguồn cho bản thiết kế vĩ đại này bắt nguồn từ sự phũ phàng của tân binh từ Chicago Bulls khi Nike đang trong quá trình tiếp cận với lời hứa sẽ xây dựng một thương hiệu riêng xoay quanh anh. 
+                Trớ trêu thay MJ lại cho rằng những thiết kế của hãng lại có phần ” đế quá dày ” khiến tay bóng có cảm giác không ưng ý khi hoạt động.
+            </p>
+            <img src="./img/advertises-images/jordan-1-85's-history.jpeg" alt="image" style="height: 600px; width: 1000px;"/>
+            <p>Hiểu được điều đó, Nike không ngừng cải tạo cũng như tinh chỉnh lại bản thiết kế của mình để thỏa mãn nhu cầu sử dụng cho gương mặt đại diện đình đám của mình. 
+                Trải qua quá trình dài hạn, Air Jordan 1 High đã vượt trên thể thao để trở thành đôi giày mang tính thương hiệu trong làng streetwear và sau đó là lịch sử.
+            </p>
+            <h2>Sự trở lại của Jordan 1 High 85:</h2>
+            <p>Có thể nói 2024 dự kiến sẽ là một năm sôi động của làng sneaker thế giới khi mà hầu hết các thương hiệu đình đám đang sẵn sàng tung ro thị trường những bộ sưu tập bom tấn. 
+                Tâm điểm của sự kiện này không thể không nhắc đến Jordan 1 High 85 sẽ được bày bán trong thời gian tới để người hâm mộ có cơ hội sở hữu lại những mẫu giày đặc biệt sau thời gian dài im hơi lặng tiếng.
+            </p>
+            <img src="./img/advertises-images/jordan-1-panda.jpeg" alt="image" style="height: 700px; width: 650px;  margin-left: 160px;"/>
+            <p>Không để bạn chờ đợi lâu hơn được nữa, sau đây hãy cùng <a href="Home.html">Sneakeraddictor</a> điểm qua những phiên bản nổi bật của Jordan 1 High 85 nhé !
+            </p>
+            <h2>Air Jordan 1 Black White 85 ” Black/White “</h2>
+            <p>Được ra mắt vào 15/2/2023, sử dụng tone màu cơ bản quen thuộc trắng - đen, có thể gọi Air Jordan 1 Black White 85 ” Black/White ” là hậu duệ của phiên bản đàn anh đời trước Air Jordan 1 High Panda. 
+                Giống nhau về màu sắc nhưng khác nhau về chất liệu và cảm giác mang là những nhận định cơ bản của khách hàng khi trải nghiệm qua hai dòng giày này.</p>
+            <img src="./img/advertises-images/air-jordan-1-panda.jpeg" alt="image" style="width: 650px; height: 700px; margin-left: 160px;"/>
+            <p>Sử dụng các chất liệu phổ thông để hình thành nên một đôi giày như da tổng hợp và phần logo được in trực tiếp lên bề mặt giày. Gía thành sản xuất rất rẻ, đồng nghĩa với việc cảm giác mang mà đôi giày mang lại sẽ không thể so sánh được so với những phiên bản có chất liệu tốt hơn.
+                 Nhưng quy chung với thiết kế đơn giản nhưng không kém phần sang trọng, Air Jordan 1 Black White 85 ” Black/White ” vẫn có thể được xem như phiên bản đáng trải nghiệm trong năm nay.</p>
+            <h2>Nike Air Jordan 1 Retro High 85 OG ‘Neutral Grey’
+            </h2>
+            <p>Lấy sự “trung tính” làm trung tâm cho việc hình thành màu sắc, Nike Air Jordan 1 Retro High 85 OG ‘Neutral Grey” có thể được xem là phiên bản tối giản nhất trong bộ sưu tập. Không phân biệt tuổi tác, giới tính và phong cách là một trong những ưu điểm nổi bật của màu xám.
+            </p>
+            <img src="./img/advertises-images/air-jordan-1-grey.jpeg" alt="image" style="width: 650px; height: 700px; margin-left: 160px;"/>
+            <p>Là sự hòa quyện giữa truyền thống và đương đại, Neutral Grey chắc chắn sẽ mang lại cho bạn những trải nghiệm mới mẻ nhưng không kém phần sang trọng trên mỗi chặng đường.
+            </p>
+            <h2>Nike Air Jordan 1 Retro High 85 Georgetown ‘Blue White’</h2>
+            <p>Là phiên bản có thiết kế đặc biệt nhất trong bộ sưu tập, Georgetown có phần mũi giày được bóp lại tương đối so với những phiên bản hiện tại. Là phiên bản độc đáo, phần swoosh hai bên thân giày được thiết kế to hơn bình thường. Bên cạnh đó, hãng cũng đã tinh tỉnh font chữ trên lưỡi gà và logo trở nên đặc biệt hơn nhằm mang lại sự đặc biệt cho đôi giày.
+            </p>
+            <img src="./img/advertises-images/qc-air-jordan-1-retro-high-85-georgetown.jpeg" alt="image" style="width: 750px; height: 600px; margin-left: 150px;"/>
+            <p>Bằng việc sử dụng chất liệu da cao cấp hơn, Nike Air Jordan 1 Retro High 85 Georgetown ‘Blue White’ sẽ mang lại cho bạn cảm giác mang dễ chịu hơn những phiên bản khác. Đặc biệt hơn, trên mỗi đôi giày ở phiên bản này đều được đánh mã số và size đặc trưng. Thật không quá lố lăng khi cho rằng Nike Air Jordan 1 Retro High 85 Georgetown ‘Blue White’ thực sự mang dáng vẻ của một đôi OG 85 đích thực.
+            </p>
+            <h2>Nên tìm mua Nike Air Jordan 1 Retro High 85 ở đâu?</h2>
+            <p>Nếu bạn là người đang trong quá trình tìm kiếm cho mình một đôi Jordan 1 high 85 nhưng chưa biết nên mua ở đâu, thì Sneakeraddictor sẽ là đáp án cho những thắc mắc của bạn. Với kinh nghiệm lâu năm của mình, Sneakeraddictor tự tin sẽ là nơi đồng hành cùng bạn trên chặng đường tìm kiếm cho mình một đôi giày ưng ý. 
+                Còn chần chừ gì nữa mà không đến ngay để tìm cho mình đôi giày bạn hằng mong ước!
+            </p>
+
+            <h3>Xem thêm <a href="#">Dòng thời gian và lịch sử của các dòng Nike air max (phần 1)</a></h3>
+        </section>
+        <footer class="ft">
+            <section class="content">
+                <a href="Home.html"><img  src="/Users/PC/Pictures/Screenshots/Ảnh chụp màn hình 2024-07-30 103502.png" alt="image"/></a>
+               <p>Hộ kinh doanh Trần Công Đạt MST : 06A8127229</p>
+              <p>SneakerAddictor - Nhà sưu tầm và phân phối các sản phẩm đến từ các thương hiệu thời trang quốc tế hàng đầu Việt Nam</p>
+              <h2>Hệ thống cửa hàng</h2>
+              <i class="fas fa-map-marker-alt"></i><p>Cơ sở 1: Số 18, ngách 88, ngõ 14, phố Vũ Hữu, quận Nam Từ Liêm, Hà Nội.</p>
+              <i class="fas fa-phone-alt"></i><p>Hotline: 0862951772.</p>
+              <i class="fas fa-map-marker-alt"></i><p>Cơ sở 2: Số 279, đường Biên Hòa, phường Lương Khánh Thiện, thành phố Phủ Lý, Hà Nam.</p>
+              <i class="fas fa-phone-alt"></i><p>Hotline: 0988829419.</p>
+            </section>
+            <section class="content">
+                <legend>About us</legend>
+                <a href="#"><p>Giới thiệu chung</p></a>
+                <a href="#"><p>Tuyển dụng</p></a>
+                <a href="#"><p>Dịch vụ Spa, sửa giày</p></a>
+                
+                <div class="content1">
+                <legend>Chính sách hỗ trợ khách hàng</legend>
+                <a href="#"><p>Hướng dẫn mua hàng</p></a>
+                <a href="#"><p>Chính sách đổi trả và bảo hành</p></a>
+                <a href="#"><p>Điều khoản trang Web</p></a>
+                <a href="#"><p>Chính sách thanh toán</p></a>
+                <a href="#"><p>Chính sách bảo vệ thông tin cá nhân của người tiêu dùng</p></a></div>
+            </section>
+            <section class="content">
+                <article class="sile1">
+                    <a href="#"><img src="https://thumbs.dreamstime.com/b/facebook-logo-vector-eps-file-squared-coloured-easily-editable-have-white-background-high-resolution-255556941.jpg" alt="facebook"><p>15k Fan</p></a>
+                    <a href="#"><img src="https://t3.ftcdn.net/jpg/04/74/05/94/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg" alt="youtube">  <p> 5k Fan</p></a>
+                    <a href="#"><img src="https://i.pinimg.com/originals/88/ad/d2/88add2e8adb859618228ca4d3b268162.png" alt="zalo"><p>Zalo H&D</p></a>
+                </article>
+                <article class="sile2">
+                    <a href="#"><img src="https://img.lazcdn.com/g/tps/tfs/TB1iRzQc5qAXuNjy1XdXXaYcVXa-374-142.png" alt="" style="width: 130px; height:50px;"></a>
+                    <a href="#"><img src="https://img.lazcdn.com/g/tps/imgextra/i3/O1CN01Bd0sVV1QY5gSQHbMq_!!6000000001987-2-tps-160-160.png" alt="" style="width: 40px; height:40px;"></a>
+                    <a href="https://www.bsigroup.com/vi-VN/"><img src="https://img.lazcdn.com/g/tps/tfs/TB1Jnytq7L0gK0jSZFAXXcA9pXa-160-84.png" alt="" style="width: 110px; height:50px;"></a>                    
+                </article>
+                    <div>
+                        
+                        <a href="#"><img src="./img/topzone.png" alt=""></a>
+                        <a href="#"><img src="./img/dienmay.png" alt=""></a>
+                        <a href="#"><img src="./img/ava.png" alt=""></a>
+                        <a href="#"><img src="./img/vieclam.png" alt=""></a>
+                    </div>
+                </article>
+            </section>
+        </footer>
+    </body>
+</html>
