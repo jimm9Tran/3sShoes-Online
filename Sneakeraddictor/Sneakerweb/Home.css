@@ -679,9 +679,11 @@ nav>.menu>li>.dropdown>li:hover{
     height: 300px;
     margin: 0px 10px;
 }
+
 .news>.carousel-menu-news>.item>a{
     text-decoration: none;
 }
+
 .news>.carousel-menu-news>.item>a>img{
     width: 400px;
     height: 250px;
@@ -773,3 +775,20 @@ nav>.menu>li>.dropdown>li:hover{
     font-family: Arial, Helvetica, sans-serif;
     width: 150px;
 }
+
+@media (max-width: 1200px) {
+    .product {
+      flex: 1 1 calc(33.33% - 40px);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .product {
+      flex: 1 1 calc(50% - 40px);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .product {
+      flex: 1 1 calc(100% - 40px);
+    }
