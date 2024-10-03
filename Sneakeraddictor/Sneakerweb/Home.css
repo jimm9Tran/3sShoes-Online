@@ -476,7 +476,7 @@ nav>.menu>li>.dropdown>li:hover{
 
 /*=============picture================*/
 .picture>img{
-    width: 102%;
+    width: 100%;
     height: 450px;
     margin-bottom: 35px;
 }
@@ -593,8 +593,8 @@ nav>.menu>li>.dropdown>li:hover{
     width: 310px;
     height: 230px;
     margin: 20px 15px;
-    border: 0.25px solid #cecccc;
     border-radius: 16px;
+    text-align: center;
 }
 .autumn-product>.autumn-product-line1>.product1>a{
     text-decoration: none;
@@ -602,6 +602,11 @@ nav>.menu>li>.dropdown>li:hover{
 .autumn-product>.autumn-product-line1>.product1>a>img{
     width: 270px;
     height: 150px;
+    margin-bottom: 8px;
+    transition: transform 0.5s ease;
+}
+.autumn-product>.autumn-product-line1>.product1>a>img:hover{
+    transform: scale(1.1);
 }
 .autumn-product>.autumn-product-line1>.product1>a>h4{
     font-size: 17px;    
@@ -612,10 +617,9 @@ nav>.menu>li>.dropdown>li:hover{
     margin: 20px 10px;
 }
 .autumn-product>.autumn-product-line2>.product1{
-    width: 310px;
-    height: 240px;
-    margin: 20px 15px;
-    border: 0.25px solid #cecccc;
+    width: 360px;
+    height: 250px;
+    margin: 20px 10px;
     border-radius: 16px;
     text-align: center;
 }
@@ -625,6 +629,11 @@ nav>.menu>li>.dropdown>li:hover{
 .autumn-product>.autumn-product-line2>.product1>a>img{
     width: 270px;
     height: 150px;
+    margin-bottom: 8px;
+    transition: transform 0.5s ease;
+}
+.autumn-product>.autumn-product-line2>.product1>a>img:hover{
+    transform: scale(1.1);
 }
 .autumn-product>.autumn-product-line2>.product1>a>h4{
     font-size: 17px;    
@@ -638,8 +647,8 @@ nav>.menu>li>.dropdown>li:hover{
     width: 310px;
     height: 240px;
     margin: 20px 15px;
-    border: 0.25px solid #cecccc;
     border-radius: 16px;
+    text-align: center;
 }
 .autumn-product>.autumn-product-line3>.product1>a{
     text-decoration: none;
@@ -648,6 +657,11 @@ nav>.menu>li>.dropdown>li:hover{
 .autumn-product>.autumn-product-line3>.product1>a>img{
     width: 270px;
     height: 150px;
+    margin-bottom: 8px;
+    transition: transform 0.5s ease;
+}
+.autumn-product>.autumn-product-line3>.product1>a>img:hover{
+    transform: scale(1.1);
 }
 .autumn-product>.autumn-product-line3>.product1>a>h4{
     font-size: 17px;    
