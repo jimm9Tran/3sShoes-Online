@@ -1,17 +1,28 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
+
 body{
-    max-width: 135%;
+    max-width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    width: auto;
 }
 .logo{
+    z-index: 1000;
+    top: 0;
+    width: 101.5%;
+    position: sticky;
+}
+.logo>.fixed{
     display: flex;
-    padding: 20px;
+    padding: 10px 20px;
     margin: 10px 20px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(10px);
     height: 100px;
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.logo>a>img{
+.logo>.fixed>a>img{
     width: 150px;
     height: 100px;
 }
@@ -76,11 +87,12 @@ nav>.menu>li{
 nav>.menu>li>.dropdown{
     background-color: #fff;
     position: absolute;
-    width: 93px;
+    width: 120px;
     list-style: none;
     display: none;
     border: 1px solid black;
     margin-top: 3px;
+    z-index: 3;
 }
 nav>.menu>li:hover>.dropdown{
     display: block;
@@ -90,7 +102,9 @@ nav>.menu>li>.dropdown>li{
     border-bottom: 1px solid black;
     align-items: center;
     top: 60px;
+    height: 50px;
     margin-bottom: 5px;
+    text-align: center;
 }
 nav>.menu>li>.dropdown>li:last-child{
     border-bottom: none;
@@ -135,7 +149,7 @@ nav>.menu>li>.dropdown>li:hover{
 
 /*=================Main-menu==================*/
 .dropdown-menu{
-    width: 100%;
+    width: 99.1%;
     height: 50px;
     background-color: rgb(192, 190, 190);
 }
@@ -205,7 +219,7 @@ nav>.menu>li>.dropdown>li:hover{
     background-color: rgb(192, 190, 190);
 }
 
-/*=============Back-to-top============*/
+/*========================Back-to-top===============================*/
 #back-to-top{
     position: fixed;
     bottom: 20px;
@@ -226,8 +240,10 @@ nav>.menu>li>.dropdown>li:hover{
     background-color: #555;
   }
 
-/*============Adidas-product=========*/
-.adidas-product{
+/*=========================Main-content====================================*/
+
+
+.More-product-main{
     padding-top: 25px;
     margin: 30px 15px;
     background-color: #fbf6f6;
@@ -236,14 +252,14 @@ nav>.menu>li>.dropdown>li:hover{
     border-radius: 2%;
     display: flex;
 }
-.adidas-product>.filter{
+.More-product-main>.filter{
     width: 150px;
     margin: 0px 15px;
 }
-.adidas-product>.filter>a{
+.More-product-main>.filter>a{
     padding: 10px 0px;
 }
-.adidas-product>.filter>a>p{
+.More-product-main>.filter>a>p{
     font-size: 15px;
     margin: 15px 10px;
     background-color: #fff;
@@ -252,24 +268,24 @@ nav>.menu>li>.dropdown>li:hover{
     border-bottom: 1px solid rgb(42, 42, 42);
 }
 
-.adidas-product>.filter>.range-container{
+.More-product-main>.filter>.range-container{
     margin: 10px;
 }
-.adidas-product>.filter>.range-container>.range-labels{
+.More-product-main>.filter>.range-container>.range-labels{
     display: flex;
     justify-content: space-between;
     font-size: 15px;
 }
-.adidas-product>.filter>.range-container>.range-output{
+.More-product-main>.filter>.range-container>.range-output{
     margin: 10px 0px;
     font-weight: bold;
 }
 
 
-.adidas-product>.split{
-  height: auto;
-}
-.adidas-product>.split>.para{
+.More-product-main>.split{
+    height: auto;
+  }
+.More-product-main>.split>.para{
     margin-left: 100px;
     font-size: 16px;
     overflow: hidden;
@@ -277,148 +293,22 @@ nav>.menu>li>.dropdown>li:hover{
     transition: max-height 0.3s ease;
     width: 860px;
 }
-.adidas-product>.split>.para>p{
+.More-product-main>.split>.para>p{
     margin-bottom: 15px;
 }
-
-.adidas-product>.split>.para.expanded {
+  
+.More-product-main>.split>.para.expanded {
     max-height: 1500px; /* large enough to show all content */
 }
-
-.adidas-product>.split>.adidas-details-line1{
-    margin: 16px 97px;
-    display: flex;
-
-}
-.adidas-product>.split>.adidas-details-line1>.product{
-   margin-top: 15px;
-   margin-bottom: 10px;
-   margin-right: 20px;
-    width: 230px;
-    height: 160px;
-}
-.adidas-product>.split>.adidas-details-line1>.product>a{
-    text-decoration: none;
-}
-.adidas-product>.split>.adidas-details-line1>.product>a>img{
-    width: 230px;
-    height: 130px;
-    border-radius: 10px;
-}
-.adidas-product>.split>.adidas-details-line1>.product>a>h4{
-    font-size: 16px;
-    margin: 10px 0px;
-}
-
-.adidas-product>.split>.adidas-details-line2{
-    margin-left: 97px;
-    margin-top: 45px;
-    display: flex;
-
-}
-.adidas-product>.split>.adidas-details-line2>.product{
-   margin-top: 15px;
-   margin-bottom: 10px;
-   margin-right: 20px;
-   width: 230px;
-   height: 160px;
-}
-.adidas-product>.split>.adidas-details-line2>.product>a{
-    text-decoration: none;
-}
-.adidas-product>.split>.adidas-details-line2>.product>a>img{
-    width: 230px;
-    height: 130px;
-    border-radius: 10px;
-}
-.adidas-product>.split>.adidas-details-line2>.product>a>h4{
-    font-size: 16px;
-    margin: 10px 0px;
-}
-
-.adidas-product>.split>.adidas-details-line3{
-    margin: 35px 97px;
-    display: flex;
-
-}
-.adidas-product>.split>.adidas-details-line3>.product{
-   margin-top: 15px;
-   margin-bottom: 10px;
-   margin-right: 20px;
-   width: 230px;
-   height: 160px;
-}
-.adidas-product>.split>.adidas-details-line3>.product>a{
-    text-decoration: none;
-}
-.adidas-product>.split>.adidas-details-line3>.product>a>img{
-    width: 230px;
-    height: 130px;
-    border-radius: 10px;
-}
-.adidas-product>.split>.adidas-details-line3>.product>a>h4{
-    font-size: 16px;
-    margin: 10px 0px;
-}
-
-.adidas-product>.split>.adidas-details-line4{
-    margin: 50px 97px;
-    display: flex;
-
-}
-.adidas-product>.split>.adidas-details-line4>.product{
-   margin-top: 15px;
-   margin-bottom: 10px;
-   margin-right: 20px;
-   width: 230px;
-   height: 160px;
-}
-.adidas-product>.split>.adidas-details-line4>.product>a{
-    text-decoration: none;
-}
-.adidas-product>.split>.adidas-details-line4>.product>a>img{
-    width: 230px;
-    height: 130px;
-    border-radius: 10px;
-}
-.adidas-product>.split>.adidas-details-line4>.product>a>h4{
-    font-size: 16px;
-    margin: 10px 0px;
-}
-
-.adidas-product>.split>.adidas-details-line5{
-    margin: 50px 97px;
-    display: flex;
-
-}
-.adidas-product>.split>.adidas-details-line5>.product{
-   margin-top: 15px;
-   margin-bottom: 10px;
-   margin-right: 20px;
-   width: 230px;
-   height: 160px;
-}
-.adidas-product>.split>.adidas-details-line5>.product>a{
-    text-decoration: none;
-}
-.adidas-product>.split>.adidas-details-line5>.product>a>img{
-    width: 230px;
-    height: 130px;
-    border-radius: 10px;
-}
-.adidas-product>.split>.adidas-details-line5>.product>a>h4{
-    font-size: 16px;
-    margin: 10px 0px;
-}
-
-
-/*================See-more======================*/
+/*===========================See-more-btn================*/
 .see-more-btn {
     color: green;
     cursor: pointer;
     margin-left: 500px;
 }
-/*=============footer=================*/
+
+  
+/*============================Ft=========================*/
 .ft{
     display: flex;
     width: 1350px;

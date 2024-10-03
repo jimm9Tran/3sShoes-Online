@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="google" content="no-translate"/>
+        <link rel="stylesheet" href="More-products.css"/>
+        <script src="script.js" type="text/javascript"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="script.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <title>SneakerAddictor-Home</title>
+    </head>
+    <body>
+        <header class="logo">
+            <div class="fixed">
+            <a href="Home.html">
+                <img src="./img/Ảnh chụp màn hình 2024-07-30 103502.png" alt="image"/>  
+            </a>
+            <nav>
+            <ul class="menu">
+                <li><a href="#">Tin Tức</a></li>
+                <li><a href="#">Về chúng tôi
+                    <ul class="dropdown">
+                        <li><a href="#">Lịch sử ra đời</a></li>
+                        <li><a href="#">Độ uy tín</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                    </ul>
+                    </a>
+                </li>
+                <li><a href="#">Helps</a></li>
+                <li><a href="#">Mua bán, trao đổi
+                    <ul class="dropdown">
+                   <li><a href="#">Giày bóng rổ 2hand</a></li>
+                   <li><a href="#">Giày casual 2hand</a></li>
+                    <li><a href="#">Thu giày new, 2hand</a></li>
+                    </ul>
+                    </a>
+                </li>
+            </ul>
+            </nav>
+            <img src="https://www.freeiconspng.com/uploads/search-icon-png-21.png" alt="Tìm kiếm" id="openModal" style="cursor: pointer; width: 35px; height: 35px; margin-left: 10px;" />
+            <div id="searchModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm..." />
+                    <br><br>
+                    <button onclick="submitSearch()"><img src="https://www.freeiconspng.com/uploads/search-icon-png-21.png" alt="Tìm kiếm" id="openModal" style="cursor: pointer; width: 25px; height: 25px; margin-left: 10px;" /></button>
+                </div>
+            </div>
+            <script>
+                var modal = document.getElementById("searchModal");
+                var btn = document.getElementById("openModal");
+                var span = document.getElementsByClassName("close")[0];
+
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+            modal.style.display = "none";
+             }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function submitSearch() {
+            var keyword = document.getElementById("searchInput").value;
+            if (keyword) {
+                alert("Bạn đã tìm kiếm: " + keyword);
+                modal.style.display = "none";
+            } else {
+                alert("Vui lòng nhập từ khóa tìm kiếm.");
+            }
+        }
+            </script>
+
+            <div class="log-in"><a href="Login.html">Đăng nhập</a></div>
+            <div class="sign-up"><a href="Signup.html">Đăng ký</a></div>
+            <div class="cart">
+                <a href="#">
+                <img src="./img/Ảnh chụp màn hình 2024-09-10 162015.png" alt="image"/></a>
+            </div>
+            </div>
+        </header>
+        <nav class="dropdown-menu">
+            <ul class="menu2">
+                <li><a href="">Thương hiệu</a>
+                    <ul class="brand1">
+                        <li><a href="#">Nike</a></li>
+                        <li><a href="#">Adidas</a></li>
+                        <li><a href="#">Jordan</a></li>
+                        <li><a href="#">Puma</a></li>
+                        <li><a href="#">MLB</a></li>
+                        <li><a href="#">Asics</a></li>
+                    </ul>
+                    <ul class="brand1">
+                        <li><a href="#">Nike</a></li>
+                        <li><a href="Adidas-product.html">Adidas</a></li>
+                        <li><a href="#">Jordan</a></li>
+                        <li><a href="#">Puma</a></li>
+                        <li><a href="#">Fear of God</a></li>
+                        <li><a href="#">MLB</a></li>
+                        <li><a href="#">Asics</a></li>
+                        <li><a href="#">Converse</a></li>
+                        <li><a href="#">Lining</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Hàng mới</a></li>
+                <li><a href="#">Giày Sneakers casual</a>
+                    <ul class="brand1">
+                        <h3>Top models</h3>
+                        <li><a href="#">Air Jordan</a></li>
+                        <li><a href="#">Converse 1970s</a></li>
+                        <li><a href="#">Nike Air Force 1</a></li>
+                        <li><a href="#">New Balance 9060</a></li>
+                        <li><a href="#">Nike Air Max</a></li>
+                        <li><a href="#">Nike Cotez</a></li>
+                        <li><a href="#">AdidasUltraboost</a></li>
+                        <li><a href="#">Adidas Yeezy</a></li>
+                    </ul>                
+                </li>
+                <li><a href="#">Giày Sneakers bóng rổ</a>
+                    <ul class="brand1">
+                        <li><a href="#">Giày New</a></li>
+                        <li><a href="#">Chuyên outdoor</a></li>
+                        <li><a href="#">Chuyên indoor</a></li>
+                        <li><a href="#">Hiệu năng cao</a></li>
+                        <li><a href="#">Giá rẻ</a>
+                            <ul class="brand2">
+                                <li><a href="#">Dưới 500k</a></li>
+                                <li><a href="#">Từ 500k đến dưới 800k</a></li>
+                                <li><a href="#">Từ 800k đến dưới 1 triệu</a></li>
+                                <li><a href="#">Trên 1 triệu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Phụ kiện</a>
+                    <ul class="brand1">
+                        <li><a href="">Quần áo bóng rổ</a></li>
+                        <li><a href="#">Balo</a></li>
+                        <li><a href="#">Tất</a></li>
+                        <li><a href="#">Băng đô, áo combat</a></li>
+                        <li><a href="#">Bó gối</a></li>
+                        <li><a href="#">Dây giày thay thế</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Khác</a>
+                    <ul class="brand1">
+                        <li><a href="#">Vòng tay silicon</a></li>
+                        <li><a href="#">Mũ NBA</a></li>
+                        <li><a href="#">Móc khóa bóng rổ</a></li>
+                        <li><a href="#">Mô hình cầu thủ</a></li>
+                        <li><a href="#">Khăn, bình nước Gatorade</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <h2 style="font-size: 25px; margin: 30px 15px; text-decoration: underline;">Giày Sneaker</h2>
+        <section class="More-product-main">
+            <div class="filter">
+                <h3 style="font-size: 18px;">Lọc theo</h3>
+                <a href="">
+                <p>35</p>
+                <p>35 1/2</p>
+                <p>36</p>
+                <p>36 1/2</p>
+                <p>36 2/3</p>
+                <p>37</p>
+                <p>37 2/3</p>
+                <p>38</p>
+                <p>38 2/3</p>
+                <p>39</p>
+                <p>39 1/2</p>
+                <p>40</p>
+                <p>40 1/2</p>
+                <p>40 2/3</p>
+                <p>41</p>
+                <p>41 1/2</p>
+                <p>41 2/3</p>
+                <p>41 2/3</p>
+                <p>42</p>
+                <p>42 1/2</p>
+                <p>42 2/3</p>
+                <p>43</p>
+                <p>43 1/2</p>
+                <p>43 2/3</p>
+                <p>44</p>
+                <p>44 1/2</p>
+                <p>44 2/3</p>
+                <p>45</p>
+                <p>45 1/2</p>
+                <p>45 2/3</p>
+                <p>46</p>
+                <p>46 1/2</p>
+                <p>46 2/3</p>
+                </a>
+                <div class="range-container">
+                    <h2>Lọc theo mức giá:</h2>
+                    <div class="range-output">
+                        Giá từ: <span id="minPrice">1.2</span> triệu đồng đến <span id="maxPrice">20</span> triệu đồng
+                    </div>
+            
+                    <label for="priceRange">Chọn mức giá:</label>
+                    <input type="range" id="priceRange" min="1200000" max="20000000" value="1200000" step="100000">
+            
+                    <div class="range-labels">
+                        <span>1.2 triệu</span>
+                        <span>20 triệu</span>
+                    </div>
+                </div>
+
+                <script>
+                    const priceRange = document.getElementById('priceRange');
+                    const minPrice = document.getElementById('minPrice');
+                    const maxPrice = document.getElementById('maxPrice');
+
+                    priceRange.addEventListener('input', function(){
+                        let value = priceRange.value;
+                        minPrice.textContent = (value / 1000000).toFixed(1);
+                    });
+                </script>
+            </div>
+                <div class="split">
+                    <div class="para" id="para">
+                        <p>Giày sneaker là một loại giày có đế đệm bọc bởi lớp cao su và thường được sử dụng cho các hoạt động thể thao như bóng rổ, tennis và chạy bộ. 
+                            Tuy nhiên, từ khi xuất hiện vào đầu thế kỷ 20,chúng đã trở thành một phần của thời trang và được sử dụng phổ biến trong đời sống hàng ngày. 
+                            Năm 1917, Converse All-Star ra đời, đây là đôi giày đầu tiên được thiết kế cho môn bóng rổ.
+                        </p>
+                        <p>Tuy nhiên, cho đến những năm 1950, đây mới thực sự trở nên phổ biến và được sử dụng hàng ngày. 
+                            Vào thập niên 80 và 90, các thương hiệu giày như Nike, Adidas và Reebok đã trở thành những biểu tượng của văn hóa thể thao và giày sneaker được sử dụng rộng rãi trong thời trang và văn hóa đường phố.
+                        </p>
+                        <p>
+                          Từ những năm 2000 trở đi, giày sneaker đã trở thành một phần không thể thiếu của thế giới thời trang và được thiết kế với nhiều kiểu dáng và màu sắc khác nhau. 
+                            Các thương hiệu hàng đầu trên thế giới như Nike, Adidas, Puma, New Balance, và Vans đều sản xuất và thiết kế các loại giày sneaker với chất lượng và kiểu dáng đa dạng, 
+                            phù hợp với nhu cầu của người dùng từ các hoạt động thể thao đến đi lại hàng ngày.
+                        </p>
+                        <p>Trong thời đại hiện đại, giày sneaker không chỉ là sản phẩm thời trang phổ biến mà còn là một biểu tượng của văn hóa đường phố và văn hóa thanh niên. 
+                            Các sneakerheads (người đam mê) thường tìm kiếm và sưu tập các phiên bản giới hạn và các dòng giày sneaker đặc biệt của các thương hiệu nổi tiếng trên thế giới.
+                        </p>
+                    </div>
+                    <p id="see-more-btn" class="see-more-btn">Xem thêm</p>
+
+                    
+                </div>
+        </section>
+        <script>
+            const content = document.getElementById("para");
+            const seeMoreBtn = document.getElementById("see-more-btn");
+    
+            seeMoreBtn.addEventListener("click", function() {
+                content.classList.toggle("expanded");
+    
+                if (content.classList.contains("expanded")) {
+                    seeMoreBtn.textContent = "Thu gọn";
+                } else {
+                    seeMoreBtn.textContent = "Xem thêm";
+                }
+            });
+        </script>
+
+<button id="back-to-top" onclick="scrollToTop()">^</button>
+<script>
+    window.onscroll = function() {
+    var btn = document.getElementById("back-to-top");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+}
+};
+
+// Back-to-top function
+function scrollToTop() {
+window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+            </div>
+    <footer class="ft">
+                <section class="content">
+                    <a href="Home.html"><img  src="/Users/PC/Pictures/Screenshots/Ảnh chụp màn hình 2024-07-30 103502.png" alt="image"/></a>
+                   <p>Hộ kinh doanh Trần Công Đạt MST : 06A8127229</p>
+                  <p>SneakerAddictor - Nhà sưu tầm và phân phối các sản phẩm đến từ các thương hiệu thời trang quốc tế hàng đầu Việt Nam</p>
+                  <h2>Hệ thống cửa hàng</h2>
+                  <i class="fas fa-map-marker-alt"></i><p>Cơ sở 1: Số 18, ngách 88, ngõ 14, phố Vũ Hữu, quận Nam Từ Liêm, Hà Nội.</p>
+                  <i class="fas fa-phone-alt"></i><p>Hotline: 0862951772.</p>
+                  <i class="fas fa-map-marker-alt"></i><p>Cơ sở 2: Số 279, đường Biên Hòa, phường Lương Khánh Thiện, thành phố Phủ Lý, Hà Nam.</p>
+                  <i class="fas fa-phone-alt"></i><p>Hotline: 0988829419.</p>
+                </section>
+                <section class="content">
+                    <legend>About us</legend>
+                    <a href="#"><p>Giới thiệu chung</p></a>
+                    <a href="#"><p>Tuyển dụng</p></a>
+                    <a href="#"><p>Dịch vụ Spa, sửa giày</p></a>
+                    
+                    <div class="content1">
+                    <legend>Chính sách hỗ trợ khách hàng</legend>
+                    <a href="#"><p>Hướng dẫn mua hàng</p></a>
+                    <a href="#"><p>Chính sách đổi trả và bảo hành</p></a>
+                    <a href="#"><p>Điều khoản trang Web</p></a>
+                    <a href="#"><p>Chính sách thanh toán</p></a>
+                    <a href="#"><p>Chính sách bảo vệ thông tin cá nhân của người tiêu dùng</p></a></div>
+                </section>
+                <section class="content">
+                    <article class="sile1">
+                        <a href="#"><img src="https://thumbs.dreamstime.com/b/facebook-logo-vector-eps-file-squared-coloured-easily-editable-have-white-background-high-resolution-255556941.jpg" alt="facebook"><p>15k Fan</p></a>
+                        <a href="#"><img src="https://t3.ftcdn.net/jpg/04/74/05/94/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg" alt="youtube">  <p> 5k Fan</p></a>
+                        <a href="#"><img src="https://i.pinimg.com/originals/88/ad/d2/88add2e8adb859618228ca4d3b268162.png" alt="zalo"><p>Zalo H&D</p></a>
+                    </article>
+                    <article class="sile2">
+                        <a href="#"><img src="https://img.lazcdn.com/g/tps/tfs/TB1iRzQc5qAXuNjy1XdXXaYcVXa-374-142.png" alt="" style="width: 130px; height:50px;"></a>
+                        <a href="#"><img src="https://img.lazcdn.com/g/tps/imgextra/i3/O1CN01Bd0sVV1QY5gSQHbMq_!!6000000001987-2-tps-160-160.png" alt="" style="width: 40px; height:40px;"></a>
+                        <a href="https://www.bsigroup.com/vi-VN/"><img src="https://img.lazcdn.com/g/tps/tfs/TB1Jnytq7L0gK0jSZFAXXcA9pXa-160-84.png" alt="" style="width: 110px; height:50px;"></a>                    
+                    </article>
+                        <div>
+                            
+                            <a href="#"><img src="./img/topzone.png" alt=""></a>
+                            <a href="#"><img src="./img/dienmay.png" alt=""></a>
+                            <a href="#"><img src="./img/ava.png" alt=""></a>
+                            <a href="#"><img src="./img/vieclam.png" alt=""></a>
+                        </div>
+                    </article>
+                </section>
+        </footer>
+    </body>
+</html>
