@@ -300,11 +300,68 @@ nav>.menu>li>.dropdown>li:hover{
 .More-product-main>.split>.para.expanded {
     max-height: 1500px; /* large enough to show all content */
 }
+
+/*===========================Products====================*/
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+}
+
+.line {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    width: 100%;
+    align-content: center;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.product img:hover{
+    transform: scale(1.1);
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product h3 {
+        font-size: 0.9rem;
+    }
+}
+
 /*===========================See-more-btn================*/
 .see-more-btn {
     color: green;
     cursor: pointer;
     margin-left: 500px;
+    margin-bottom: 25px;
 }
 
   
