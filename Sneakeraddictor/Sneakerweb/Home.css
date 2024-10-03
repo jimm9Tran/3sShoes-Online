@@ -5,14 +5,23 @@ body{
     width: auto;
 }
 .logo{
+    z-index: 1000;
+    top: 0;
+    width: 101.5%;
+    position: sticky;
+}
+.logo>.fixed{
     display: flex;
-    padding: 20px;
+    padding: 10px 20px;
     margin: 10px 20px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(10px);
     height: 100px;
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.logo>a>img{
+.logo>.fixed>a>img{
     width: 150px;
     height: 100px;
 }
@@ -362,67 +371,53 @@ nav>.menu>li>.dropdown>li:hover{
 }
 
 /*=============products===============*/
-.product-list{
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.line {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    width: 100%;
+    align-content: center;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product h3 {
     margin-top: 10px;
-    margin-bottom: 20px;
-    height: 870px;
-    padding: 15px 10px;
-}
-.product-list>.line1{
-    display: flex;
-    margin-bottom: 10px;
-}
-.product-list>.line1>.product{
-    width: 280px;
-    height: 270px;
-    transition: transform 0.5s ease;
-    margin: 10px 20px;
-    color: #111111;
-}
-.product-list>.line1>.product:hover{
-    transform: scale(1.1);
-}
-.product-list>.line1>.product>img{
-    width: 280px;
-    height: 150px;
+    font-size: 1rem;
 }
 
-.product-list>.line2{
-    display: flex;
-    margin-bottom: 10px;
-}
-.product-list>.line2>.product{
-    width: 280px;
-    height: 270px;
-    transition: transform 0.5s ease;
-    margin: 10px 20px;
-    color: #111111;
-}
-.product-list>.line2>.product:hover{
-    transform: scale(1.1);
-}
-.product-list>.line2>.product>img{
-    width: 280px;
-    height: 150px;
+@media (max-width: 768px) {
+    .product-container {
+        padding: 0 16px;
+    }
 }
 
-.product-list>.line3{
-    display: flex;
-    margin-bottom: 10px;
-}
-.product-list>.line3>.product{
-    width: 280px;
-    height: 270px;
-    transition: transform 0.5s ease;
-    margin: 10px 20px;
-    color: #111111;
-}
-.product-list>.line3>.product:hover{
-    transform: scale(1.1);
-}
-.product-list>.line3>.product>img{
-    width: 280px;
-    height: 150px;
+@media (max-width: 480px) {
+    .product h3 {
+        font-size: 0.9rem;
+    }
 }
 
 /*=============Famous-brands==========*/
@@ -775,20 +770,3 @@ nav>.menu>li>.dropdown>li:hover{
     font-family: Arial, Helvetica, sans-serif;
     width: 150px;
 }
-
-@media (max-width: 1200px) {
-    .product {
-      flex: 1 1 calc(33.33% - 40px);
-    }
-  }
-  
-  @media (max-width: 900px) {
-    .product {
-      flex: 1 1 calc(50% - 40px);
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .product {
-      flex: 1 1 calc(100% - 40px);
-    }
