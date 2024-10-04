@@ -285,131 +285,60 @@ nav>.menu>li>.dropdown>li:hover{
 .adidas-product>.split>.para.expanded {
     max-height: 1500px; /* large enough to show all content */
 }
+/*==========================Products=========================*/
 
-.adidas-product>.split>.adidas-details-line1{
-    margin: 16px 97px;
+.product-container {
     display: flex;
-
-}
-.adidas-product>.split>.adidas-details-line1>.product{
-   margin-top: 15px;
-   margin-bottom: 10px;
-   margin-right: 20px;
-    width: 230px;
-    height: 160px;
-}
-.adidas-product>.split>.adidas-details-line1>.product>a{
-    text-decoration: none;
-}
-.adidas-product>.split>.adidas-details-line1>.product>a>img{
-    width: 230px;
-    height: 130px;
-    border-radius: 10px;
-}
-.adidas-product>.split>.adidas-details-line1>.product>a>h4{
-    font-size: 16px;
-    margin: 10px 0px;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    padding: 10px 5px;
 }
 
-.adidas-product>.split>.adidas-details-line2{
-    margin-left: 97px;
-    margin-top: 45px;
-    display: flex;
-
-}
-.adidas-product>.split>.adidas-details-line2>.product{
-   margin-top: 15px;
-   margin-bottom: 10px;
-   margin-right: 20px;
-   width: 230px;
-   height: 160px;
-}
-.adidas-product>.split>.adidas-details-line2>.product>a{
-    text-decoration: none;
-}
-.adidas-product>.split>.adidas-details-line2>.product>a>img{
-    width: 230px;
-    height: 130px;
-    border-radius: 10px;
-}
-.adidas-product>.split>.adidas-details-line2>.product>a>h4{
-    font-size: 16px;
-    margin: 10px 0px;
+.line {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    width: 100%;
+    align-content: center;
 }
 
-.adidas-product>.split>.adidas-details-line3{
-    margin: 35px 97px;
-    display: flex;
-
-}
-.adidas-product>.split>.adidas-details-line3>.product{
-   margin-top: 15px;
-   margin-bottom: 10px;
-   margin-right: 20px;
-   width: 230px;
-   height: 160px;
-}
-.adidas-product>.split>.adidas-details-line3>.product>a{
-    text-decoration: none;
-}
-.adidas-product>.split>.adidas-details-line3>.product>a>img{
-    width: 230px;
-    height: 130px;
-    border-radius: 10px;
-}
-.adidas-product>.split>.adidas-details-line3>.product>a>h4{
-    font-size: 16px;
-    margin: 10px 0px;
+.product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease;
 }
 
-.adidas-product>.split>.adidas-details-line4{
-    margin: 50px 97px;
-    display: flex;
-
+.product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
-.adidas-product>.split>.adidas-details-line4>.product{
-   margin-top: 15px;
-   margin-bottom: 10px;
-   margin-right: 20px;
-   width: 230px;
-   height: 160px;
-}
-.adidas-product>.split>.adidas-details-line4>.product>a{
-    text-decoration: none;
-}
-.adidas-product>.split>.adidas-details-line4>.product>a>img{
-    width: 230px;
-    height: 130px;
-    border-radius: 10px;
-}
-.adidas-product>.split>.adidas-details-line4>.product>a>h4{
-    font-size: 16px;
-    margin: 10px 0px;
+.product img:hover{
+    transform: scale(1.1);
 }
 
-.adidas-product>.split>.adidas-details-line5{
-    margin: 50px 97px;
-    display: flex;
+.product h3 {
+    margin-top: 10px;
+    font-size: 1rem;
+}
 
+@media (max-width: 768px) {
+    .product-container {
+        padding: 0 16px;
+    }
 }
-.adidas-product>.split>.adidas-details-line5>.product{
-   margin-top: 15px;
-   margin-bottom: 10px;
-   margin-right: 20px;
-   width: 230px;
-   height: 160px;
-}
-.adidas-product>.split>.adidas-details-line5>.product>a{
-    text-decoration: none;
-}
-.adidas-product>.split>.adidas-details-line5>.product>a>img{
-    width: 230px;
-    height: 130px;
-    border-radius: 10px;
-}
-.adidas-product>.split>.adidas-details-line5>.product>a>h4{
-    font-size: 16px;
-    margin: 10px 0px;
+
+@media (max-width: 480px) {
+    .product h3 {
+        font-size: 0.9rem;
+    }
 }
 
 
