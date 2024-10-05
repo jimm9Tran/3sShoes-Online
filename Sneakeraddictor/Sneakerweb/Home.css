@@ -13,7 +13,7 @@ body{
 .logo>.fixed{
     display: flex;
     padding: 10px 20px;
-    margin: 10px 20px;
+    margin: 10px 0px;
     align-items: center;
     justify-content: space-between;
     background: rgba(255, 255, 255, 0.8); 
@@ -144,6 +144,7 @@ nav>.menu>li>.dropdown>li:hover{
 .logo>.cart>img{
     width: 30px;
     height: 30px;
+    background-color: rgb(255, 255, 255, 0.8);
 }
 
 /*=================Main-menu==================*/
@@ -540,6 +541,10 @@ nav>.menu>li>.dropdown>li:hover{
 }
 
 .product h3 {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.product h4{
     margin-top: 10px;
     font-size: 1rem;
 }
