@@ -170,3 +170,34 @@ function leftclick(){
 function rightclick(){
     carousel.scrollBy({left: 200, behavior: "smooth"});
 }
+
+
+/*=========================Searching-box=====================*/
+
+var modal = document.getElementById("searchModal");
+var btn = document.getElementById("openModal");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+
+function submitSearch() {
+var keyword = document.getElementById("searchInput").value;
+if (keyword) {
+alert("Bạn đã tìm kiếm: " + keyword);
+modal.style.display = "none";
+} else {
+alert("Vui lòng nhập từ khóa tìm kiếm.");
+}
+}
