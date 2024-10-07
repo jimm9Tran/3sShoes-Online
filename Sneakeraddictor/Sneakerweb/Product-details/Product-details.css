@@ -380,3 +380,131 @@ nav>.menu>li>.dropdown>li:hover{
         margin-bottom: 10px;
     }
 }
+
+
+.payment{
+    display: flex;
+    margin-top: 15px;
+}
+.payment>article{
+    padding: 22px 11px;
+    transition: transform 0.5s ease;
+}
+.payment>article:hover{
+    transform: scale(1.1);
+}
+.payment>article>h3{
+    font-size: 16px;
+}
+.payment>article>p{
+    font-size: 14px;
+}
+
+/*===========================Information=====================*/
+.information{
+    margin: 15px 0px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.accordion-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.active {
+    background-color: #ccc;
+}
+
+/*=================Product-details======================*/
+
+.Product-details{
+    margin-top: 20px;
+    margin-left: 330px;
+    width: 650px;
+    text-align: center;
+}
+.Product-details>p{
+    margin: 10px 0px;
+}
+
+/*=======================Back-to-top=========================*/
+
+#back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #7b7979;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none; /* Ẩn nút mặc định */
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+
+  /* Thay đổi kiểu nút khi di chuột */
+  #back-to-top:hover {
+    background-color: #555;
+  }
+
+/*===========================Footer====================*/
+
+.ft{
+    display: flex;
+    width: 1350px;
+    height: 325px;
+    border-top: 1px solid black;
+    margin-top: 20px;
+    padding-top: 15px;
+    color: #111111;
+}
+.ft>.content{
+    margin-left: 40px;
+    width: 350px;
+    margin-bottom: 15px;
+}
+.ft>.content>a>img{
+    width: 110px;
+    height: 95px;
+}
+.ft>.content>legend{
+    border-bottom: 1px solid grey;
+    width: 120px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+.ft>.content>.sile1>a>img{
+    width: 40px;
+    height: 40px;
+}
+.ft>.content>.content1{
+    margin-top: 35px;
+}
+.ft>.content>.content1>legend{
+    border-bottom: 1px solid grey;
+    width: 120px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+.ft>.content>p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+}

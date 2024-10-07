@@ -47,3 +47,20 @@ function leftclick(){
 function rightclick(){
     carousel.scrollBy({left: 700, behavior: "smooth"});
 }
+
+
+/*============================================*/
+
+window.onscroll = function() {
+    var btn = document.getElementById("back-to-top");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+}
+};
+
+// Back-to-top function
+function scrollToTop() {
+window.scrollTo({ top: 0, behavior: 'smooth' });
+}

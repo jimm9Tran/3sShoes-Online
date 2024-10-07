@@ -207,8 +207,124 @@
             <p><em>Tổng đài hoạt động từ 10h00 - 22h00 mỗi ngày</em></p>
         </div>
     </div>
+    <div class="payment">
+        <article style="width: 150px; height: 90px; border-radius: 10px; background-color: red; color: #fff; margin: 0px 10px;">
+            <h3>Mua ngay</h3>
+            <p>Giao tận nơi hoặc nhận tại cửa hàng</p>
+        </article>
+        <article style="width: 150px; height: 90px; border-radius: 10px; background-color: rgb(57, 169, 207); color: #fff; margin: 0px 10px;">
+            <h3>Trả góp qua thẻ</h3>
+            <p>Visa, Master, JCB</p>
+        </article>
+        <article style="width: 150px; height: 90px; border-radius: 10px; background-color: yellow; color: blue; margin: 0px 10px;">
+            <h3>Mua ngay - Trả sau</h3>
+        </article>
     </div>
+
+    <div class="information">
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">Hệ thống Cửa hàng <span class="accordion-icon"></span></h2>
+                <div class="accordion-content">
+                    <p>* Authentic Shoes HCM: 561 Nguyễn Đình Chiểu, P.2, Q.3, 0786665444</p>
+                    <p>* Authentic Shoes HN: 14 Vũ Hữu, Nam Từ Liêm, 0862951772</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">Cam kết khách hàng <span class="accordion-icon"></span></h2>
+                <div class="accordion-content">
+                    <p>* Sneaker Addictor cam kết chỉ phân phối các sản phẩm 100% chính hãng có nguồn gốc từ Mỹ, Hàn, Nhật và các nước Châu Âu. 
+                        * Sneaker Addictor cam kết hoàn tiền 500% cho tất cả khách hàng nếu sản phẩm bán ra không chính hãng và không đảm bảo chất lượng. 
+                        * Sneaker Addictor cam hết mọi sản phẩm đều ở tình trạng mới 100% với bao bì đi kèm của nhà sản xuất 
+                        * Miễn phí đổi Size và mẫu nếu khách hàng không hài lòng * Bảo hành sản phẩm 365 ngày đối với các lỗi của nhà sản xuất 
+                        * Sẵn sàng trả lời mọi thắc mắc, yêu cầu hỗ trợ từ quý khách 24/7</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+    </script>
         </section>
+
+        <h2 style="background-color: black; color: #fff; border-radius: 10px; width: 80px; height: 50px; margin-left: 610px; padding: 10px 7px;">Mô tả</h2>
+        <section class="Product-details">
+            <h3>Mã sản phẩm:</h3><p>DX5549-400</p>
+            <h3>Màu sắc: </h3><p>COASTAL BLUE/COASTAL BLUE-LIGHT CURRENT BLUE</p>
+            <h3>Ngày phát hành:</h3><p>04/11/2022</p>
+            <h3>Mô tả sản phẩm:</h3><p>Giày Nike SB Dunk Low Pro Why So Sad có hỗn hợp màu, với xanh dương bờ biển và xanh dương hiện nay là hai tông màu chủ đạo.
+
+                Mặt trên của giày Low Nike SB Dunk được làm từ vật liệu da và có hệ thống khâu SB kiểu Fat-style. Phần sau của giày có logo gàivant trên skateboard được sợi vải đính. Ngoài ra, phần sau và cuộn giày có branding Nike SB.
+                
+                Giày Nike SB Dunk Low Pro Why So Sad được phát hành ngày 4 tháng 11 năm 2022.</p>
+        </section>
+
+        <button id="back-to-top" onclick="scrollToTop()">^</button>
+
         <script src="Products-details.js"></script>
+
+        <footer class="ft">
+            <section class="content">
+                <a href="Home.html"><img  src="/Users/PC/Pictures/Screenshots/Ảnh chụp màn hình 2024-07-30 103502.png" alt="image"/></a>
+               <p>Hộ kinh doanh Trần Công Đạt MST : 06A8127229</p>
+              <p>SneakerAddictor - Nhà sưu tầm và phân phối các sản phẩm đến từ các thương hiệu thời trang quốc tế hàng đầu Việt Nam</p>
+              <h2>Hệ thống cửa hàng</h2>
+              <i class="fas fa-map-marker-alt"></i><p>Cơ sở 1: Số 18, ngách 88, ngõ 14, phố Vũ Hữu, quận Nam Từ Liêm, Hà Nội.</p>
+              <i class="fas fa-phone-alt"></i><p>Hotline: 0862951772.</p>
+              <i class="fas fa-map-marker-alt"></i><p>Cơ sở 2: Số 279, đường Biên Hòa, phường Lương Khánh Thiện, thành phố Phủ Lý, Hà Nam.</p>
+              <i class="fas fa-phone-alt"></i><p>Hotline: 0988829419.</p>
+            </section>
+            <section class="content">
+                <legend>About us</legend>
+                <a href="#"><p>Giới thiệu chung</p></a>
+                <a href="#"><p>Tuyển dụng</p></a>
+                <a href="#"><p>Dịch vụ Spa, sửa giày</p></a>
+                
+                <div class="content1">
+                <legend>Chính sách hỗ trợ khách hàng</legend>
+                <a href="#"><p>Hướng dẫn mua hàng</p></a>
+                <a href="#"><p>Chính sách đổi trả và bảo hành</p></a>
+                <a href="#"><p>Điều khoản trang Web</p></a>
+                <a href="#"><p>Chính sách thanh toán</p></a>
+                <a href="#"><p>Chính sách bảo vệ thông tin cá nhân của người tiêu dùng</p></a></div>
+            </section>
+            <section class="content">
+                <article class="sile1">
+                    <a href="#"><img src="https://thumbs.dreamstime.com/b/facebook-logo-vector-eps-file-squared-coloured-easily-editable-have-white-background-high-resolution-255556941.jpg" alt="facebook"><p>15k Fan</p></a>
+                    <a href="#"><img src="https://t3.ftcdn.net/jpg/04/74/05/94/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg" alt="youtube">  <p> 5k Fan</p></a>
+                    <a href="#"><img src="https://i.pinimg.com/originals/88/ad/d2/88add2e8adb859618228ca4d3b268162.png" alt="zalo"><p>Zalo H&D</p></a>
+                </article>
+                <article class="sile2">
+                    <a href="#"><img src="https://img.lazcdn.com/g/tps/tfs/TB1iRzQc5qAXuNjy1XdXXaYcVXa-374-142.png" alt="" style="width: 130px; height:50px;"></a>
+                    <a href="#"><img src="https://img.lazcdn.com/g/tps/imgextra/i3/O1CN01Bd0sVV1QY5gSQHbMq_!!6000000001987-2-tps-160-160.png" alt="" style="width: 40px; height:40px;"></a>
+                    <a href="https://www.bsigroup.com/vi-VN/"><img src="https://img.lazcdn.com/g/tps/tfs/TB1Jnytq7L0gK0jSZFAXXcA9pXa-160-84.png" alt="" style="width: 110px; height:50px;"></a>                    
+                </article>
+                    <div>
+                        
+                        <a href="#"><img src="./img/topzone.png" alt=""></a>
+                        <a href="#"><img src="./img/dienmay.png" alt=""></a>
+                        <a href="#"><img src="./img/ava.png" alt=""></a>
+                        <a href="#"><img src="./img/vieclam.png" alt=""></a>
+                    </div>
+                </article>
+            </section>
+        </footer>
     </body>
 </html>        
