@@ -1,0 +1,329 @@
+body{
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+}
+.logo{
+    z-index: 1000;
+    top: 0;
+    width: 101.5%;
+    position: sticky;
+}
+.logo>.fixed{
+    display: flex;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(10px);
+    height: 100px;
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo>.fixed>a>img{
+    width: 150px;
+    height: 100px;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    background: url("/Users/PC/Pictures/Screenshots/Ảnh chụp màn hình 2024-07-30 103502.png");
+    background-size: cover;
+}
+.modal-content>input{
+    width: 200px;
+    height: 50px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*======================nav========================*/
+nav{
+    margin: 0px 10px;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav>.menu{
+    display: flex;
+    font-size: larger;
+}
+nav>.menu>li{
+    margin: 5px 20px;
+    list-style: none;
+}
+nav>.menu>li>.dropdown{
+    background-color: #fff;
+    position: absolute;
+    width: 120px;
+    list-style: none;
+    display: none;
+    border: 1px solid black;
+    margin-top: 3px;
+    z-index: 3;
+}
+nav>.menu>li:hover>.dropdown{
+    display: block;
+}
+nav>.menu>li>.dropdown>li{
+    list-style: none;
+    border-bottom: 1px solid black;
+    align-items: center;
+    top: 60px;
+    height: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+nav>.menu>li>.dropdown>li:last-child{
+    border-bottom: none;
+}
+nav>.menu>li>.dropdown>li:hover{
+    background-color: rgb(192, 190, 190);
+}
+.log-in{
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-right: 5px;
+    height: 30px;
+    align-items: center;
+}
+.log-in>a{
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+}
+.sign-up{
+    width: 63px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 7px;
+    height: 30px;
+    align-items: center;
+}
+.sign-up>a{
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+}
+.logo>.cart{
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.logo>.cart>img{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+/*=================Main-menu==================*/
+.dropdown-menu{
+    width: 99.1%;
+    height: 50px;
+    background-color: rgb(192, 190, 190);
+}
+.dropdown-menu>.menu2{
+    display: flex;
+    margin: 10px 15px;
+    list-style: none;
+    justify-content: center;
+}
+.dropdown-menu>.menu2>li{
+    margin: 0px 35px;
+    margin-top: 17px;
+}
+.dropdown-menu>.menu2>li>a{
+    text-decoration: none;
+    color: black;
+}
+.dropdown-menu>.menu2>li>.brand1{
+    border-radius: 3%;
+    background-color: #fff;
+    position: absolute;
+    list-style: none;
+    width: 250px;
+    margin-top: 10px;
+    display: none;
+    height: 250px;
+    z-index: 3;
+}
+.dropdown-menu>.menu2>li:hover>.brand1{
+    display: block;
+}
+.dropdown-menu>.menu2>li>.brand1>li{
+    justify-content: center;
+    border-bottom: 1px solid black;
+    height: 25px;
+}
+.dropdown-menu>.menu2>li>.brand1>li:last-child{
+    border-bottom: none;
+}
+.dropdown-menu>.menu2>li>.brand1>li:hover{
+    background-color: rgb(192, 190, 190);
+}
+.dropdown-menu>.menu2>li>.brand1>li>a{
+    color: black;
+    text-decoration: none;
+}
+.dropdown-menu>.menu2>li>.brand1>li>.brand2{
+    border-radius: 3%;
+    background-color: #fff;
+    list-style: none;
+    width: 250px;
+    margin-top: 10px;
+    display: none;
+    height: 250px;
+}
+.dropdown-menu>.menu2>li>.brand1>li:hover>.brand2{
+    display: block;
+}
+.dropdown-menu>.menu2>li>.brand1>li>.brand2>li{
+    border-bottom: 1px solid black;
+    height: 25px;
+}
+.dropdown-menu>.menu2>li>.brand1>li>.brand2>li:last-child{
+    border-bottom: none;
+}
+.dropdown-menu>.menu2>li>.brand1>li>.brand2>li:hover{
+    background-color: rgb(192, 190, 190);
+}
+
+/*========================Main-news=========================*/
+
+.Main-news{
+    width: 980px;
+    margin-top: 30px;
+    align-items: center;
+}
+.Main-news>h2{
+    font-weight: bold;
+    font-size: 25px;
+    margin: 25px 150px;
+}
+
+.Main-news>p{
+    width: 980px;
+    font-size: 17px;
+    margin: 15px 150px;
+}
+/*=========================Back-to-top======================*/
+
+#back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #7b7979;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none; /* Ẩn nút mặc định */
+    transition: all 0.3s ease;
+  }
+
+  /* Thay đổi kiểu nút khi di chuột */
+  #back-to-top:hover {
+    background-color: #555;
+  }
+
+/*========================ft=======================*/
+
+.ft{
+    display: flex;
+    width: 1350px;
+    height: 325px;
+    border-top: 1px solid black;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+.ft>.content{
+    margin-left: 40px;
+    width: 350px;
+    margin-bottom: 15px;
+}
+.ft>.content>a>img{
+    width: 110px;
+    height: 95px;
+}
+.ft>.content>legend{
+    border-bottom: 1px solid grey;
+    width: 120px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+.ft>.content>.sile1>a>img{
+    width: 40px;
+    height: 40px;
+}
+.ft>.content>.content1{
+    margin-top: 35px;
+}
+.ft>.content>.content1>legend{
+    border-bottom: 1px solid grey;
+    width: 120px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+.ft>.content>p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+}
+h3{
+    margin: 15px 20px;
+}
+
+/*=====================Back-to-top======================*/
+
+#back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #7b7979;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none; /* Ẩn nút mặc định */
+    transition: all 0.3s ease;
+  }
+
+  /* Thay đổi kiểu nút khi di chuột */
+  #back-to-top:hover {
+    background-color: #555;
+  }
+
+

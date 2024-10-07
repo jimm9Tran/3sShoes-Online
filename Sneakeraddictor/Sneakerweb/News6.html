@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="google" content="no-translate"/>
+        <link rel="stylesheet" href="News6.css"/>
+        <script src="script.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <title>SneakerAddictor-Tin tức</title>
+    </head>
+    <body>
+        <header class="logo">
+            <div class="fixed">
+            <a href="Home.html">
+                <img src="./img/Ảnh chụp màn hình 2024-07-30 103502.png" alt="image"/>  
+            </a>
+            <nav>
+            <ul class="menu">
+                <li><a href="#">Tin Tức</a></li>
+                <li><a href="#">Về chúng tôi
+                    <ul class="dropdown">
+                        <li><a href="#">Lịch sử ra đời</a></li>
+                        <li><a href="#">Độ uy tín</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                    </ul>
+                    </a>
+                </li>
+                <li><a href="#">Helps</a></li>
+                <li><a href="#">Mua bán, trao đổi
+                    <ul class="dropdown">
+                   <li><a href="./Basketballl/Basketball.html">Giày bóng rổ 2hand</a></li>
+                   <li><a href="#">Giày casual 2hand</a></li>
+                    <li><a href="#">Thu giày new, 2hand</a></li>
+                    </ul>
+                    </a>
+                </li>
+            </ul>
+            </nav>
+            <div class="cart-search">
+            <img src="https://www.freeiconspng.com/uploads/search-icon-png-21.png" alt="Tìm kiếm" id="openModal" style="cursor: pointer; width: 35px; height: 35px; margin-left: 10px; margin-right: 30px;" />
+            <div id="searchModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm..." />
+                    <br><br>
+                    <button onclick="submitSearch()"><img src="https://www.freeiconspng.com/uploads/search-icon-png-21.png" alt="Tìm kiếm" id="openModal" style="cursor: pointer; width: 25px; height: 25px; margin-left: 10px;" /></button>
+                </div>
+            </div>
+            <script>
+                 var modal = document.getElementById("searchModal");
+                var btn = document.getElementById("openModal");
+                var span = document.getElementsByClassName("close")[0];
+
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+            modal.style.display = "none";
+             }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function submitSearch() {
+            var keyword = document.getElementById("searchInput").value;
+            if (keyword) {
+                alert("Bạn đã tìm kiếm: " + keyword);
+                modal.style.display = "none";
+            } else {
+                alert("Vui lòng nhập từ khóa tìm kiếm.");
+            }
+        }
+            </script>
+                <a href="#">
+                <img src="./img/Ảnh chụp màn hình 2024-09-10 162015.png" alt="image"/></a>
+            </div>
+            </div>
+            </div>
+        </header>
+
+        <nav class="dropdown-menu">
+            <ul class="menu2">
+                <li><a href="">Thương hiệu</a>
+                    <ul class="brand1">
+                        <li><a href="#">Nike</a></li>
+                        <li><a href="#">Adidas</a></li>
+                        <li><a href="#">Jordan</a></li>
+                        <li><a href="#">Puma</a></li>
+                        <li><a href="#">MLB</a></li>
+                        <li><a href="#">Asics</a></li>
+                    </ul>
+                    <ul class="brand1">
+                        <li><a href="#">Nike</a></li>
+                        <li><a href="./Adidas/Adidas-product.html">Adidas</a></li>
+                        <li><a href="#">Jordan</a></li>
+                        <li><a href="#">Puma</a></li>
+                        <li><a href="#">Fear of God</a></li>
+                        <li><a href="#">MLB</a></li>
+                        <li><a href="#">Asics</a></li>
+                        <li><a href="#">Converse</a></li>
+                        <li><a href="#">Lining</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Hàng mới</a></li>
+                <li><a href="#">Giày Sneakers casual</a>
+                    <ul class="brand1">
+                        <h3>Top models</h3>
+                        <li><a href="#">Air Jordan</a></li>
+                        <li><a href="#">Converse 1970s</a></li>
+                        <li><a href="#">Nike Air Force 1</a></li>
+                        <li><a href="#">New Balance 9060</a></li>
+                        <li><a href="#">Nike Air Max</a></li>
+                        <li><a href="#">Nike Cotez</a></li>
+                        <li><a href="#">AdidasUltraboost</a></li>
+                        <li><a href="#">Adidas Yeezy</a></li>
+                    </ul>                
+                </li>
+                <li><a href="./Basketballl/Basketball.html">Giày Sneakers bóng rổ</a>
+                    <ul class="brand1">
+                        <li><a href="#">Giày New</a></li>
+                        <li><a href="#">Chuyên outdoor</a></li>
+                        <li><a href="#">Chuyên indoor</a></li>
+                        <li><a href="#">Hiệu năng cao</a></li>
+                        <li><a href="#">Giá rẻ</a>
+                            <ul class="brand2">
+                                <li><a href="#">Dưới 500k</a></li>
+                                <li><a href="#">Từ 500k đến dưới 800k</a></li>
+                                <li><a href="#">Từ 800k đến dưới 1 triệu</a></li>
+                                <li><a href="#">Trên 1 triệu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Phụ kiện</a>
+                    <ul class="brand1">
+                        <li><a href="">Quần áo bóng rổ</a></li>
+                        <li><a href="#">Balo</a></li>
+                        <li><a href="#">Tất</a></li>
+                        <li><a href="#">Băng đô, áo combat</a></li>
+                        <li><a href="#">Bó gối</a></li>
+                        <li><a href="#">Dây giày thay thế</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Khác</a>
+                    <ul class="brand1">
+                        <li><a href="#">Vòng tay silicon</a></li>
+                        <li><a href="#">Mũ NBA</a></li>
+                        <li><a href="#">Móc khóa bóng rổ</a></li>
+                        <li><a href="#">Mô hình cầu thủ</a></li>
+                        <li><a href="#">Khăn, bình nước Gatorade</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+<section class="Main-news">
+    <h2>Hành trình xây dựng đế chế giày thể thao và khối tài sản hơn 62 tỷ USD của ông chủ Nike</h2>
+    <p>Phil Knight, nhà đồng sáng lập Nike tốt nghiệp chuyên ngành báo chí năm 1959 nhưng sau đó nảy ra ý tưởng khởi nghiệp về giày thể thao khi theo học MBA tại Stanford.</p>
+    <h2>Học báo chí nhưng khởi nghiệp với giày</h2>
+    <p>Phil Knight, nhà đồng sáng lập <a href="https://www.nike.com/">Nike</a> sinh ngày 24/2/1938. Ông theo học Đại học Oregon và tốt nghiệp năm 1959 chuyên ngành báo chí. Sau khi phục vụ trong quân ngũ một năm, ông trở lại trường học và nhận bằng MBA từ Trường Kinh doanh Stanford. Knight nảy ra ý tưởng thành lập công ty Blue Ribbon Sports (BRS) - tiền thân của Nike trong suốt thời gian học tại Stanford. Ông hợp tác với huấn luyện viên môn điền kinh tại Oregon, Bill Bowerman và mỗi người góp 500 USD vào công ty. Cùng Sneaker Addictor tìm hiểu nhé.</p>
+    <img src="./img/advertises-images/phil-knight-shoes-dog.jpg" alt="image" style="margin: 10px 350px; width: 550px;"/>
+
+    <p>Chiến lược ban đầu của BRS là nhập khẩu giày thể thao Nhật Bản mang tên Onitsuka Tigerers và bán chúng với giá cao hơn ở Mỹ. Khi Bowerman có những thiết kế riêng, BRS mở rộng sang thị trường châu Á và sản xuất giày tại đây để có giá thành rẻ hơn, 
+        nhằm cạnh tranh với các đối thủ như Adidas - cũng chuyển hoạt động sản xuất ra ngoài nước Đức.
+    </p><p>Năm 1971, công ty chính thức đổi tên thành Nike. Khi đó, một số vận động viên nổi tiếng đã sử dụng những đôi giày mang thương hiệu này, giúp tăng gấp đôi lợi nhuận hàng năm của hãng. Sự kết nối giữa Knight và Bowerman với cộng đồng chạy bộ và sự chú trọng vào sản xuất sản phẩm chất lượng cao giúp Nike trở thành lựa chọn hàng đầu của các vận động viên chuyên nghiệp.</p>
+    <img src="./img/advertises-images/shoe-dog-nike-biopic-phil-knight.jpeg" alt="image" style="width: 800px; height: 500px; margin: 15px 250px;"/>
+    <p>Công ty trình làng mẫu giày Nike Cortez cùng thời điểm Thế vận hội Mùa hè 1972 tại Munich và Knight chắc chắn rằng giày của hãng là lựa chọn hàng đầu của các vận động viên. Mẫu giày Cortez đa dạng về màu sắc và lần đầu tiên gắn logo “swoosh” của Nike, biến chúng trở thành một trong những mẫu sneaker có sức hấp dẫn cả về khía cạnh thời trang và chức năng. 
+        Nike tăng trưởng nhanh chóng trong suốt thập niên 70 và đầu thập niên 80. Doanh thu của công ty tăng từ 28,7 triệu USD năm 1973 lên 867 triệu USD vào năm 1983.
+    </p>
+    <p>Hãng ra mắt mẫu Air Force 1 vào năm 1982. Đây là mẫu giày đầu tiên có Nike Air, một túi khí ở gót giày cung cấp thêm đệm và hỗ trợ cho người chơi bóng rổ. Sản phẩm trở thành một trong những đôi giày thể thao phổ biến nhất từ trước đến nay với hàng triệu đôi được bán ra mỗi năm. Một trong những thành tựu lớn nhất của Knight là ký thành công hợp đồng với Michael Jordan và ra mắt Air Jordan – một trong những thương hiệu sneaker thành công nhất mọi thời đại. Nike bắt tay với Jordan vào năm 1985, khi anh là một ngôi sao bóng rổ trên đường chinh phục NBA. 
+        Hợp đồng giữa 2 bên có thời hạn 5 năm với giá trị 500.000 USD/năm, một con số lớn chưa từng có vào thời điểm đó.
+    </p>
+    <img src="./img/advertises-images/phil-knight-shoes-dog-when-young.jpg" alt="image" style="width: 800px; height: 500px; margin: 15px 250px;"/>
+    <p>Tháng 3 cùng năm, Air Jordan có mặt tại các cửa hàng với giá 65 USD/đôi. Chỉ 2 tháng sau, doanh thu từ sản phẩm này đã đạt 70 triệu USD và tăng lên hơn 100 triệu USD vào cuối năm.
+    </p>
+    <h2>Thăng trầm trong hành trình xây dựng đế chế tỷ USD
+    </h2>
+    <p>Đến giữa những năm 1980, doanh số của Nike bắt đầu sụt giảm. Knight hiểu rằng công ty cần thay đổi. 
+        Ông nhận ra dù Nike đang tập trung quảng cáo cho các vận động viên hàng đầu, phần lớn khách hàng của họ lại là những người bình thường và không dùng sản phẩm của hãng cho các hoạt động thể thao. 
+        Knight quyết định thay đổi Nike - từ một công ty định hướng sản phẩm - sang một công ty định hướng tiếp thị.
+        Ông bắt đầu quan tâm đến khách hàng bình thường và nhờ đó doanh số tăng trưởng trở lại. Cuối năm 1991, hãng lấy lại vị thế của mình với doanh thu hơn 3 tỷ USD.
+    </p>
+    <img src="./img/advertises-images/Phil-knight-shoes-sheft.jpeg" alt="image" style="margin: 15px 250px; width: 800px; height: 500px;"/>
+    <p>“Điều quan trọng nhất chúng tôi làm là quảng bá sản phẩm. Marketing kết nối toàn bộ tổ chức lại với nhau. 
+        Những yếu tố thiết kế và đặc điểm chức năng của chính sản phẩm là một phần trong quá trình tiếp thị”, 
+        Knight phát biểu trên Harvard Business Review năm 1992. Tài năng tiếp thị của Knight xuất phát từ thực tế là ông không chỉ tập trung vào việc bán giày, 
+        ông luôn tạo ra điều gì đó còn nhiều hơn thế. Tại một hội nghị công nghiệp vào giữa những năm 1970, Knight chỉ ra điểm khác biệt quan trọng trong chiến lược marketing của mình. 
+        Ông nói rằng mình không phải người trong ngành kinh doanh giày - mà đúng hơn là đang làm việc trong ngành kinh doanh giải trí.
+    </p>
+    <img src="./img/advertises-images/Phil-knight-shoes-sheft2.jpeg" alt="image" style="margin: 15px 250px; width: 800px; height: 500px;"/>
+    <p>Vào những năm 1990, Nike phải đối mặt với một trở ngại khác: công ty vướng vào bê bối đối xử tệ bạc và bóc lột sức lao động của công nhân. Khách hàng kêu gọi tẩy chay thương hiệu và phản đối bên ngoài các cửa hàng, 
+        khiến Nike bị người tiêu dùng quay lưng suốt gần một thập kỷ.
+    </p>
+    <p>Doanh số tụt dốc thảm hại khiến công ty buộc phải sa thải nhân viên vào năm 1998. Một lần nữa, Knight - người giữ vị trí CEO vào thời điểm đó – bắt đầu thực hiện những thay đổi để cứu thương hiệu. Chấp nhận những điều tiếng của công ty, ông tăng lương tối thiểu cho công nhân, cải thiện quy phạm lao động và đảm bảo các nhà máy có không khí sạch. Niềm tin của người tiêu dùng quay trở lại và Nike một lần nữa vươn lên đỉnh cao.
+    </p>
+    <img src="./img/advertises-images/phil-knight-shoes-dog-speech.jpeg" alt="image" style="width: 800px; height: 500; margin: 15px 250px;"/>
+    <p>Đến tháng 6/2016, Phil Knight từ chức Chủ tịch hội đồng quản trị Nike sau 52 năm làm việc miệt mài với thương hiệu này. Hiện hãng thời trang thể thao của ông có giá trị thị trường hơn 270 tỷ USD, doanh thu năm 2020 đạt 37,4 tỷ USD. Cùng với sự phát triển của Nike, nhà sáng lập Phil Knight cũng ngày càng giàu có. Theo thống kê Real Time của Forbes, Knight và gia đình đang nắm trong tay khối tài sản 62,1 tỷ USD và là người giàu thứ 19 trên thế giới.
+
+    </p>
+    <p>Tiếp tục theo dõi Authentic Shoes để cập nhật những thông tin mới nhất về thời trang và giày dép nhé.</p>
+
+</section>
+
+<button id="back-to-top" onclick="scrollToTop()" style="font-size: larger;">^</button>
+<script>
+    window.onscroll = function() {
+    var btn = document.getElementById("back-to-top");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+}
+};
+
+// Back-to-top function
+function scrollToTop() {
+window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+
+
+<footer class="ft">
+<section class="content">
+<a href="Home.html"><img  src="/Users/PC/Pictures/Screenshots/Ảnh chụp màn hình 2024-07-30 103502.png" alt="image"/></a>
+<p>Hộ kinh doanh Trần Công Đạt MST : 06A8127229</p>
+<p>SneakerAddictor - Nhà sưu tầm và phân phối các sản phẩm đến từ các thương hiệu thời trang quốc tế hàng đầu Việt Nam</p>
+<h2>Hệ thống cửa hàng</h2>
+<i class="fas fa-map-marker-alt"></i><p>Cơ sở 1: Số 18, ngách 88, ngõ 14, phố Vũ Hữu, quận Nam Từ Liêm, Hà Nội.</p>
+<i class="fas fa-phone-alt"></i><p>Hotline: 0862951772.</p>
+<i class="fas fa-map-marker-alt"></i><p>Cơ sở 2: Số 279, đường Biên Hòa, phường Lương Khánh Thiện, thành phố Phủ Lý, Hà Nam.</p>
+<i class="fas fa-phone-alt"></i><p>Hotline: 0988829419.</p>
+</section>
+<section class="content">
+<legend>About us</legend>
+<a href="#"><p>Giới thiệu chung</p></a>
+<a href="#"><p>Tuyển dụng</p></a>
+<a href="#"><p>Dịch vụ Spa, sửa giày</p></a>
+
+<div class="content1">
+<legend>Chính sách hỗ trợ khách hàng</legend>
+<a href="#"><p>Hướng dẫn mua hàng</p></a>
+<a href="#"><p>Chính sách đổi trả và bảo hành</p></a>
+<a href="#"><p>Điều khoản trang Web</p></a>
+<a href="#"><p>Chính sách thanh toán</p></a>
+<a href="#"><p>Chính sách bảo vệ thông tin cá nhân của người tiêu dùng</p></a></div>
+</section>
+<section class="content">
+<article class="sile1">
+    <a href="#"><img src="https://thumbs.dreamstime.com/b/facebook-logo-vector-eps-file-squared-coloured-easily-editable-have-white-background-high-resolution-255556941.jpg" alt="facebook"><p>15k Fan</p></a>
+    <a href="#"><img src="https://t3.ftcdn.net/jpg/04/74/05/94/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg" alt="youtube">  <p> 5k Fan</p></a>
+    <a href="#"><img src="https://i.pinimg.com/originals/88/ad/d2/88add2e8adb859618228ca4d3b268162.png" alt="zalo"><p>Zalo H&D</p></a>
+</article>
+<article class="sile2">
+    <a href="#"><img src="https://img.lazcdn.com/g/tps/tfs/TB1iRzQc5qAXuNjy1XdXXaYcVXa-374-142.png" alt="" style="width: 130px; height:50px;"></a>
+    <a href="#"><img src="https://img.lazcdn.com/g/tps/imgextra/i3/O1CN01Bd0sVV1QY5gSQHbMq_!!6000000001987-2-tps-160-160.png" alt="" style="width: 40px; height:40px;"></a>
+    <a href="https://www.bsigroup.com/vi-VN/"><img src="https://img.lazcdn.com/g/tps/tfs/TB1Jnytq7L0gK0jSZFAXXcA9pXa-160-84.png" alt="" style="width: 110px; height:50px;"></a>                    
+</article>
+    <div>
+        
+        <a href="#"><img src="./img/topzone.png" alt=""></a>
+        <a href="#"><img src="./img/dienmay.png" alt=""></a>
+        <a href="#"><img src="./img/ava.png" alt=""></a>
+        <a href="#"><img src="./img/vieclam.png" alt=""></a>
+    </div>
+</article>
+</section>
+</footer>
+</body>
+</html>
